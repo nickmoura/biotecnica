@@ -1,0 +1,174 @@
+* {
+	font-family: "Inter", sans-serif;
+	color: var(--primary-color);
+}
+
+.pre-header {
+	background-color: var(--primary-color) !important;
+}
+
+.social-icon-btn:hover i {
+	color: var(--third-color);
+}
+
+.navbar {
+	background-color: var(--third-color) !important;
+}
+
+.navbar a {
+	color: var(--third-color) !important;
+}
+
+.navbar a:hover {
+	color: var(--primary-color) !important;
+}
+
+.icon-container {
+	width: 7.125rem;
+	height: 7.125rem;
+	border: 0.75rem solid var(--fourth-color);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto 2rem;
+	padding: 1rem;
+}
+
+.process-step:hover .icon-container {
+	border-color: var(--third-color);
+}
+
+.process-icon {
+	color: var(--fourth-color);
+	font-size: 3.5rem;
+}
+
+.appointment .appointment-form h1,
+p {
+	color: var(--primary-color);
+	text-shadow: 1px 1px 2px var(--fourth-color);
+}
+
+.border-primary-input {
+	border-color: var(--fourth-color);
+}
+
+.border-primary-input::placeholder {
+	color: var(--primary-color);
+}
+
+.why-choose-title {
+	color: var(--primary-color);
+	font-weight: 700;
+}
+
+.why-choose-icon {
+	color: var(--primary-color);
+}
+
+.why-choose-item:hover .why-choose-icon {
+	color: var(--primary-color);
+}
+
+.why-choose-item {
+	height: 22rem;
+}
+
+.why-choose-text {
+	color: var(--primary-color);
+}
+
+.why-choose-item:hover .why-choose-text {
+	color: var(--primary-color);
+	text-shadow: none;
+}
+
+.rehab-list {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	justify-content: center;
+	gap: 0.25rem;
+	padding: 0 1.75rem 0 1.75rem;
+	list-style-type: disc;
+	list-style-position: outside !important;
+}
+
+.team-item {
+	border: 1px solid var(--primary-color);
+	border-radius: 10px;
+	padding: 2rem 0 0 0;
+}
+
+.copyright-area {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+}
+
+.about-text {
+	text-align: justify;
+	text-shadow: none;
+}
+
+.text-discover {
+	text-shadow: none;
+}
+
+.nav-link.active {
+	color: var(--secondary-color); /* Muda a cor do link ativo */
+  }
+
+.nav-link:active .know-how {
+	font-weight: 400;
+	color: var(--secondary-color) !important;
+}
+
+.nav-link.active .know-how {
+	color: var(--secondary-color) !important;
+}
+
+.nav-link:hover .know-how {
+	color: var(--secondary-color);
+}
+
+.special-text {
+	text-align: justify;
+	text-shadow: none;
+}
+
+.input-number::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+.input-number {
+	-moz-appearance: textfield;
+	/* Adicione aqui outros estilos personalizados */
+}
+
+.submit-contact, .submit-item {
+	text-transform: uppercase;
+}
+
+.footer-social-area {
+	align-items: center;
+	gap: 1rem;
+}
+
+.contact-info-header {
+	font-weight: bolder;
+}
+
+.social-btn-footer i {
+	color: var(--third-color);
+}
+
+.social-btn-footer:hover i {
+	color: var(--primary-color);
+}
+
+.footer p {
+	color: var(--third-color);
+	text-shadow: none;
+}

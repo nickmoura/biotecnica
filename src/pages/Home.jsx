@@ -3,24 +3,22 @@ const Home = () => {
 		<main>
 			{/* About Start */}
 			<section id="about">
-				<div className="container-fluid about bg-light py-5">
+				<div className="container-fluid about py-5">
 					<div className="container py-5">
 						<div className="row g-5 align-items-center">
-							<div className="col-lg-5 wow fadeInLeft" data-wow-delay="0.2s">
+							<div className="col-lg-5 wow fadeInLeft about-pics-area" data-wow-delay="0.2s">
 								<div className="about-img pb-5 ps-5">
-									<img src="./img/hero-3.png" className="img-fluid rounded w-100" style={{ objectFit: "cover" }}
+									<img src="./img/hero-3.png" className="img-fluid rounded w-100 shelves" style={{ objectFit: "cover" }}
 										alt="Image" />
 									<div className="about-img-inner">
 										<img src="./img/site-08.jpg" className="img-fluid rounded-circle w-100 h-100"
 											alt="Image" />
 									</div> 
-									<div className="about-experience">32 anos no mercado</div>
 								</div>
 							</div>
-							<div className="col-lg-7 wow fadeInRight" data-wow-delay="0.4s">
-								<div className="section-title text-start mb-5">
-									<h4 className="sub-title pe-3 mb-0">Ortopedia Biotécnica</h4>
-									<h1 className="display-3 mb-4">Inovação e Cuidado em Reabilitação</h1>
+							<div className="hero-text col-lg-7 wow fadeInRight" data-wow-delay="0.4s">
+								<div className="section-title text-start">
+									<h1 className="display-3 mb-4 main-title">Inovação e Cuidado em Reabilitação</h1>
 									<p className="about-text mb-4"> Desde 1992, a Ortopedia Biotécnica se dedica a
 										transformar vidas por meio da reabilitação física.
 										Com mais de 30 anos de experiência, somos
@@ -44,17 +42,14 @@ const Home = () => {
 				<div className="container-fluid feature py-5">
 					<div className="container py-5">
 						<div className="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">
-							<div className="sub-style">
-								<h4 className="sub-title px-3 mb-0">Entenda por que estamos há 3 décadas no mercado</h4>
-							</div>
-							<h1 className="display-3 mb-4">Por que escolher a Biotécnica?</h1>
+							<h1 className="display-3 mb-4 main-title">Por que escolher a Biotécnica?</h1>
 						</div>
 						<div className="row g-4 justify-content-center">
 							<div className="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
 								<div className="why-choose-item row-cols-1 feature-item p-4">
 									<div className="col-12">
 										<div className="feature-icon mb-4">
-											<div className="p-3 d-inline-flex rounded">
+											<div className="p-3 d-inline-flex rounded why-choose-icon-area">
 												<i className="why-choose-icon fas fa-solid fa-user-nurse fa-4x"></i>
 											</div>
 										</div>
@@ -131,10 +126,7 @@ const Home = () => {
 			<section id="rehab" className="container-fluid team py-5">
 				<div className="container py-5">
 					<div className="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">
-						<div className="sub-style">
-							<h4 className="sub-title px-3 mb-0">Passo a passo</h4>
-						</div>
-						<h1 className="display-3 mb-4">Processo de reabilitação Biotécnica</h1>
+						<h1 className="display-3 mb-4 main-title">Processo de reabilitação Biotécnica</h1>
 						<p className="text-discover mb-0">Descubra nosso processo e o que ele tem de especial.</p>
 					</div>
 					<div className="row g-4 justify-content-center">
@@ -289,7 +281,6 @@ const Home = () => {
 					<div className="row g-5 align-items-center">
 						<div className="col-lg-6 wow fadeInLeft" data-wow-delay="0.2">
 							<div className="section-title text-start">
-								<h4 className="sub-title pe-3 mb-0">Próteses e Órteses em Sorocaba</h4>
 								<h1 className="display-4 mb-4">Especialidades</h1>
 								<div className="row g-4">
 									<div className="col-sm-6">

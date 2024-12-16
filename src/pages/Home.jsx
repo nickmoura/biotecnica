@@ -7,13 +7,9 @@ const Home = () => {
 					<div className="container py-5">
 						<div className="row g-5 align-items-center">
 							<div className="col-lg-5 wow fadeInLeft about-pics-area" data-wow-delay="0.2s">
-								<div className="about-img pb-5 ps-5">
-									<img src="./img/hero-3.png" className="img-fluid rounded w-100 shelves" style={{ objectFit: "cover" }}
+								<div className="about-img">
+									<img src="./img/hero-3.png" className="img-fluid rounded w-100 shelves" style={{ objectFit: "cover"}}
 										alt="Image" />
-									<div className="about-img-inner">
-										<img src="./img/site-08.jpg" className="img-fluid rounded-circle w-100 h-100"
-											alt="Image" />
-									</div> 
 								</div>
 							</div>
 							<div className="hero-text col-lg-7 wow fadeInRight" data-wow-delay="0.4s">
@@ -108,9 +104,9 @@ const Home = () => {
 										</div>
 										<div className="feature-content d-flex flex-column">
 											<h5 className="why-choose-title mb-4">Exclusividade</h5>
-											<p className="why-choose-text mb-0">A Biotécnica entende que cada um de nós possui
+											<p className="why-choose-text mb-0">A Biotécnica sabe que cada um de nós possui
 												características
-												pessoais, incluindo gostos e estilos. Nossas próteses unem personalização e
+												pessoais, logo, nossas próteses unem personalização e
 												funcionalidade.</p>
 										</div>
 									</div>
@@ -278,7 +274,7 @@ const Home = () => {
 			{/* Book Appointment Start */}
 			<section id="special" className="container-fluid appointment py-5">
 				<div className="container py-5">
-					<div className="row g-5 align-items-center">
+					<div className="special-area row g-5 align-items-center">
 						<div className="col-lg-6 wow fadeInLeft" data-wow-delay="0.2">
 							<div className="section-title text-start">
 								<h1 className="display-4 mb-4">Especialidades</h1>
@@ -361,7 +357,7 @@ const Home = () => {
 										</div>
 										<div className="col-12">
 											<button onClick="handleSubmit()" type="submit"
-												className="submit-contact btn btn-primary text-white w-100 py-3 px-5">Enviar</button>
+												className="submit-contact btn btn-primary w-100 py-3 px-5">Enviar</button>
 										</div>
 									</div>
 								</form>

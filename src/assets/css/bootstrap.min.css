@@ -26,7 +26,8 @@
 	--bs-danger: #dc3545;
 	--bs-light: #FAF9FB;
 	--bs-dark: #202135;
-	--primary-color: #0B2232; /* Pageant Blue */
+	--primary-color: #1F2C43; /* Pageant Blue */
+	--primary-color-rgb: 31, 44, 67; /* Pageant Blue */
 	--secondary-color: #9BAEB5 ; /* Blue Fog */
 	--third-color: #FFFFFF ; /* Bright White */
 	--fourth-color: #71757E; /* Mockingbird */
@@ -2270,9 +2271,9 @@ progress {
 
 .form-control:focus {
 	background-color: #fff;
-	border-color: var(--fourth-color);
+	border-color: var(--third-color);
 	outline: 0;
-	box-shadow: 0 0 0 .25rem var(--fourth-color)
+	box-shadow: 0 0 0 .25rem var(--third-color)
 }
 
 .form-control::-webkit-date-and-time-value {
@@ -2469,9 +2470,9 @@ textarea.form-control-lg {
 }
 
 .form-select:focus {
-	border-color: var(--fourth-color);
+	border-color: var(--third-color);
 	outline: 0;
-	box-shadow: 0 0 0 .25rem var(--fourth-color)
+	box-shadow: 0 0 0 .25rem var(--third-color)
 }
 
 .form-select[multiple],
@@ -3140,21 +3141,22 @@ fieldset:disabled .btn {
 }
 
 .btn-primary {
-	color: var(--third-color) !important;
-	background-color: var(--primary-color);
+	background-color: var(--third-color);
 	border-color: var(--primary-color);
+	color: var(--primary-color) !important;
+	font-size: 1.5rem;
 }
 
 .btn-primary:hover {
-	color: var(--primary-color);
-	background-color: var(--third-color);
-	border-color: var(--primary-color)
+	color: var(--third-color) !important;
+	background-color: var(--primary-color);
+	border-color: var(--third-color)
 }
 
 .btn-check:focus+.btn-primary,
 .btn-primary:focus {
 	color: var(--primary-color);
-	background-color: var(--third-color);
+	background-color: var(--secondary-color);
 	border-color: var(--primary-color);
 	box-shadow: 0 0 0 .25rem rgba(18, 157, 184, .5)
 }
@@ -3165,7 +3167,7 @@ fieldset:disabled .btn {
 .btn-primary.active,
 .show>.btn-primary.dropdown-toggle {
 	color: var(--primary-color);
-	background-color: var(--third-color);
+	background-color: var(--secondary-color);
 	border-color: var(--primary-color)
 }
 

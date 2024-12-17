@@ -5,14 +5,8 @@ const Home = () => {
 			<section id="about">
 				<div className="container-fluid about py-5">
 					<div className="container py-5">
-						<div className="row g-5 align-items-center">
-							<div className="col-lg-5 wow fadeInLeft about-pics-area" data-wow-delay="0.2s">
-								<div className="about-img">
-									<img src="./img/hero-3.png" className="img-fluid rounded w-100 shelves" style={{ objectFit: "cover"}}
-										alt="Image" />
-								</div>
-							</div>
-							<div className="hero-text col-lg-7 wow fadeInRight" data-wow-delay="0.4s">
+						<div className="row g-5 align-items-center justify-content-center">
+							<div className="hero-text rounded col-lg-7 wow fadeInRight" data-wow-delay="0.4s">
 								<div className="section-title text-start">
 									<h1 className="display-3 mb-4 main-title">Inovação e Cuidado em Reabilitação</h1>
 									<p className="about-text mb-4"> Desde 1992, a Ortopedia Biotécnica se dedica a

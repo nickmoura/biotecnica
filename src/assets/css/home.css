@@ -114,6 +114,23 @@ header {
     margin-top: 0 !important;
 }
 
+.about::before {
+    content: "";
+    background-image: url('/public/img/hero-3.png');
+    background-size: contain;
+    position: absolute; /* Coloca atrás do conteúdo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.30; /* Define a opacidade do fundo */
+    z-index: -1; /* Joga a camada pra trás */
+}
+
+.about {
+    position: relative;
+}
+
 .section-title {
     display: flex;
     flex-direction: column;
@@ -165,6 +182,8 @@ main {
 }
 
 .main-title {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--primary-color);
     text-align: center;
 }
 
@@ -249,8 +268,14 @@ main {
     display: flex;
     align-items: center;
     text-align: center;
-    font-size: 1.5rem !important;
+    font-size: 1.25rem !important;
     font-weight: 400 !important;
+}
+
+@media (min-width: 1700px) {
+    .navbar .nav-link {
+        font-size: 1.75rem !important;
+    }
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -468,16 +493,6 @@ main {
 /*** Service End ***/
 
 /*** About Start ***/
-
-.about-pics-area {
-    margin: 0 !important;
-}
-
-.about .about-img {
-    position: relative;
-    overflow: hidden;
-    height: 100%;
-}
 
 .about .about-img .about-img-inner {
     position: absolute;
@@ -1312,6 +1327,7 @@ footer {
 }
 
 .special-text {
+    text-align: justify;
     text-shadow: none;
 }
 

@@ -14,7 +14,7 @@ const Header = () => {
           data-bs-toggle="collapse"
           data-bs-target="#navbarCollapse"
         >
-          <span className="fa fa-bars"></span>
+          <span className="fa fa-bars" style={{color: "var(--third-color)"}}></span>
         </button>
         <div className="collapse navbar-collapse justify-content-end" id="navbarCollapse">
           <div className="navbar-nav ms-auto py-0">

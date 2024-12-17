@@ -21,12 +21,12 @@ const Header = () => {
             <Link to="/" className="nav-item nav-link active">
               Início
             </Link>
-            <Link to="/about" className="nav-item nav-link">
+            <a href="/#about" className="nav-item nav-link">
               Sobre
-            </Link>
-            <Link to="/home#why-choose" className="nav-item nav-link">
+            </a>
+            <a href="/#why-choose" className="nav-item nav-link">
               Por que a Biotécnica?
-            </Link>
+            </a>
             <Link to="/home#rehab" className="nav-item nav-link">
               Processo
             </Link>

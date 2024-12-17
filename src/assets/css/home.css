@@ -1228,16 +1228,24 @@ footer {
     font-size: 3.5rem;
 }
 
+
 .appointment-form {
     padding: 2rem !important;
     border: 0.25rem solid var(--secondary-color);
 }
 
-.appointment .appointment-form h1,
+.appointment .appointment-form p {
+    border-bottom: 1px solid var(--third-color);
+    padding-bottom: 0.5rem;
+
+}
+
+.appointment .appointment-form h2,
 .appointment .appointment-form p {
     text-align: center;
     color: var(--third-color);
     text-shadow: 1px 1px 2px var(--secondary-color);
+
 }
 
 .border-primary-input {

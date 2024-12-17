@@ -4,7 +4,7 @@ const Header = () => {
 
   return (
     <header className="container-fluid position-relative p-0">
-      <nav className="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+      <nav className="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
         <Link to="/" className="navbar-brand p-0">
         <img src="./img/biotecnica-logo-branco-cortado.png" alt="Logo" style={{ height: '50px' }} />
         </Link>

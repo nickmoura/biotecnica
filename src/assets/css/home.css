@@ -103,8 +103,10 @@
 /*** Header ***/
 
 header {
-    height: 30vh !important;
+    align-content: center;
+    min-height: 30vh;
     border-bottom: 0.25rem solid var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 /*** Section Title Start ***/
@@ -356,7 +358,6 @@ main {
     }
 
     .navbar-light .navbar-collapse {
-        display: flex;
         gap: 10rem !important;
         margin-top: 15px;
         border-top: 1px solid #DDDDDD;
@@ -1197,10 +1198,6 @@ footer {
 * {
     font-family: "Inter", sans-serif;
     color: var(--primary-color);
-}
-
-.navbar {
-    background-color: var(--primary-color) !important;
 }
 
 .navbar .nav-item {

@@ -103,8 +103,9 @@
 /*** Header ***/
 
 header {
-    height: 30vh !important;
+    padding: 5.5rem 0;
     border-bottom: 0.25rem solid var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 /*** Section Title Start ***/
@@ -256,12 +257,12 @@ main {
     display: flex;
     gap: 3rem;
     height: 100%;
+    padding: .5rem 1rem;
 }
 
 .navbar-nav {
     display: flex;
     gap: 3rem;
-    margin: 0 !important;
 }
 
 .navbar .nav-link {
@@ -352,12 +353,14 @@ main {
     .navbar.navbar-expand-lg .navbar-toggler {
         padding: 10px 20px;
         border: 1px solid var(--fourth-color);
+    }
+
+    .navbar.navbar-expand-lg .navbar-toggler,
+    .navbar.navbar-expand-lg .navbar-toggler span {
         color: var(--bs-primary);
     }
 
     .navbar-light .navbar-collapse {
-        display: flex;
-        gap: 10rem !important;
         margin-top: 15px;
         border-top: 1px solid #DDDDDD;
     }
@@ -366,7 +369,10 @@ main {
     .sticky-top.navbar-light .navbar-nav .nav-link {
         padding: 10px 0;
         margin-left: 0;
-        color: var(--bs-dark) !important;
+    }
+
+    .navbar-nav {
+        padding: 2rem 0;
     }
 
     .navbar-light .navbar-brand img {
@@ -376,10 +382,7 @@ main {
 
 @media (min-width: 992px) {
     .navbar-light {
-        position: absolute;
         width: 100%;
-        top: 0;
-        left: 0;
         border-bottom: 1px solid rgba(255, 255, 255, .1);
         z-index: 999;
     }
@@ -506,10 +509,6 @@ main {
 
 .container {
     padding-bottom: 0 !important;
-}
-
-.container-fluid {
-    padding-top: 1rem !important;
 }
 
 .feature {
@@ -1199,10 +1198,6 @@ footer {
     color: var(--primary-color);
 }
 
-.navbar {
-    background-color: var(--primary-color) !important;
-}
-
 .navbar .nav-item {
     color: var(--third-color) !important;
 }
@@ -1228,16 +1223,24 @@ footer {
     font-size: 3.5rem;
 }
 
+
 .appointment-form {
     padding: 2rem !important;
     border: 0.25rem solid var(--secondary-color);
 }
 
-.appointment .appointment-form h1,
+.appointment .appointment-form p {
+    border-bottom: 1px solid var(--third-color);
+    padding-bottom: 0.5rem;
+
+}
+
+.appointment .appointment-form h2,
 .appointment .appointment-form p {
     text-align: center;
     color: var(--third-color);
     text-shadow: 1px 1px 2px var(--secondary-color);
+
 }
 
 .border-primary-input {

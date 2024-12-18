@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 const Header = () => {
 
   return (
-    <header className="container-fluid position-relative p-0">
-      <nav className="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+    <header className="container-fluid position-relative">
+      <nav className="navbar navbar-expand-lg navbar-light">
         <Link to="/" className="navbar-brand p-0">
         <img src="./img/biotecnica-logo-branco-cortado.png" alt="Logo" style={{ height: '50px' }} />
         </Link>
@@ -17,16 +17,16 @@ const Header = () => {
           <span className="fa fa-bars"></span>
         </button>
         <div className="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-          <div className="navbar-nav ms-auto py-0">
+          <div className="navbar-nav ms-auto">
             <Link to="/" className="nav-item nav-link active">
               Início
             </Link>
-            <Link to="/about" className="nav-item nav-link">
+            <a href="/#about" className="nav-item nav-link">
               Sobre
-            </Link>
-            <Link to="/home#why-choose" className="nav-item nav-link">
+            </a>
+            <a href="/#why-choose" className="nav-item nav-link">
               Por que a Biotécnica?
-            </Link>
+            </a>
             <Link to="/home#rehab" className="nav-item nav-link">
               Processo
             </Link>

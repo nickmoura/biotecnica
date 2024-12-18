@@ -4,7 +4,7 @@ const Header = () => {
 
   return (
     <header className="container-fluid position-relative">
-      <nav className="navbar navbar-expand-lg navbar-light bg-white">
+      <nav className="navbar navbar-expand-lg navbar-light">
         <Link to="/" className="navbar-brand p-0">
         <img src="./img/biotecnica-logo-branco-cortado.png" alt="Logo" style={{ height: '50px' }} />
         </Link>
@@ -17,7 +17,7 @@ const Header = () => {
           <span className="fa fa-bars"></span>
         </button>
         <div className="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-          <div className="navbar-nav ms-auto py-0">
+          <div className="navbar-nav ms-auto">
             <Link to="/" className="nav-item nav-link active">
               Início
             </Link>

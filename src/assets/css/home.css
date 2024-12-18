@@ -103,8 +103,10 @@
 /*** Header ***/
 
 header {
-    height: 30vh !important;
+    align-content: center;
+    min-height: 30vh;
     border-bottom: 0.25rem solid var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 /*** Section Title Start ***/
@@ -351,22 +353,24 @@ main {
 
     .navbar.navbar-expand-lg .navbar-toggler {
         padding: 10px 20px;
-        border: 1px solid var(--fourth-color);
-        color: var(--bs-primary);
+        border: 0.25px solid var(--fourth-color);
+        color: var(--third-color)
     }
 
     .navbar-light .navbar-collapse {
-        display: flex;
-        gap: 10rem !important;
-        margin-top: 15px;
+        margin-top: 1rem;
+        padding: 2rem 0;
         border-top: 1px solid #DDDDDD;
+    }
+
+    .navbar-nav {
+        margin-bottom: 2rem!important;
     }
 
     .navbar-light .navbar-nav .nav-link,
     .sticky-top.navbar-light .navbar-nav .nav-link {
         padding: 10px 0;
         margin-left: 0;
-        color: var(--bs-dark) !important;
     }
 
     .navbar-light .navbar-brand img {
@@ -1197,10 +1201,6 @@ footer {
 * {
     font-family: "Inter", sans-serif;
     color: var(--primary-color);
-}
-
-.navbar {
-    background-color: var(--primary-color) !important;
 }
 
 .navbar .nav-item {

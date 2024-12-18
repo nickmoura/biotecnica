@@ -257,6 +257,7 @@ main {
     display: flex;
     gap: 3rem;
     height: 100%;
+    padding: .5rem 1rem;
 }
 
 .navbar-nav {

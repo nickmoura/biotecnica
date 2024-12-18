@@ -353,8 +353,8 @@ main {
 
     .navbar.navbar-expand-lg .navbar-toggler {
         padding: 10px 20px;
-        border: 1px solid var(--fourth-color);
-        color: var(--bs-primary);
+        border: 0.25px solid var(--fourth-color);
+        color: var(--third-color)
     }
 
     .navbar-light .navbar-collapse {

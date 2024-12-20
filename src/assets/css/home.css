@@ -1192,7 +1192,7 @@ footer {
 
 @media screen and (max-width: 991.98px) {
     footer {
-        padding: 0;
+        padding: 0 1.25rem !important;
         gap: 1.5rem;
     }
 
@@ -1201,12 +1201,25 @@ footer {
         color: var(--third-color);
     }
 
+    .footer-item span {
+        line-height: 1.5rem;
+    }
+
     .footer-line {
         gap: 1rem;
     }
 
     .footer-social-area p {
         font-size: 1.25rem !important;
+    }
+
+    .contact-area a {
+        gap: 0.75rem;
+    }
+
+    .contact-area i {
+        display: flex;
+        align-items: center;
     }
 
     .footer-item {

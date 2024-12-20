@@ -2,6 +2,15 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
 
+  const changeActivatedLink = function (currentElement) {
+    const activatedElement = document.querySelector('[data-active-link].active');
+
+    if (!activatedElement) return;
+
+    activatedElement.classList.remove('active');
+    currentElement.target.classList.add('active');
+  };
+
   return (
     <header className="container-fluid position-relative">
       <nav className="navbar navbar-expand-lg navbar-light">
@@ -18,22 +27,22 @@ const Header = () => {
         </button>
         <div className="collapse navbar-collapse justify-content-end" id="navbarCollapse">
           <div className="navbar-nav ms-auto">
-            <Link to="/" className="nav-item nav-link active">
+            <Link to="/" className="nav-item nav-link active" data-active-link onClick={changeActivatedLink}>
               Início
             </Link>
-            <a href="/#about" className="nav-item nav-link">
+            <a href="/#about" className="nav-item nav-link" data-active-link onClick={changeActivatedLink}>
               Sobre
             </a>
-            <a href="/#why-choose" className="nav-item nav-link">
+            <a href="/#why-choose" className="nav-item nav-link" data-active-link onClick={changeActivatedLink}>
               Por que a Biotécnica?
             </a>
-            <Link to="/#rehab" className="nav-item nav-link">
+            <Link to="/#rehab" className="nav-item nav-link" data-active-link onClick={changeActivatedLink}>
               Processo
             </Link>
-            <Link to="/#special" className="nav-item nav-link">
+            <Link to="/#special" className="nav-item nav-link" data-active-link onClick={changeActivatedLink}>
               Especialidades
             </Link>
-            <Link to="/produtos" className="nav-item nav-link">
+            <Link to="/produtos" className="nav-item nav-link" data-active-link onClick={changeActivatedLink}>
               Produtos
             </Link>
           </div>

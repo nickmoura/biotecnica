@@ -1251,10 +1251,6 @@ footer {
     color: var(--primary-color);
 }
 
-.navbar .nav-item {
-    color: var(--third-color) !important;
-}
-
 .icon-container {
     width: 7.125rem;
     height: 7.125rem;

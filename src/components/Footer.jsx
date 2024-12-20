@@ -1,6 +1,6 @@
 const Footer = () => {
 	return (
-		<footer className="container-fluid footer py-2 wow fadeIn" data-wow-delay="0.2s">
+		<footer className="container-fluid footer wow fadeIn" data-wow-delay="0.2s">
 			<div className="footer-line row g-5">
 				<div className="col-md-6 col-lg-6 col-xl-3 footer-social-container">
 					<div className="footer-item d-flex flex-column footer-social-area">

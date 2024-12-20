@@ -27,10 +27,10 @@ const Header = () => {
             <a href="/#why-choose" className="nav-item nav-link">
               Por que a Biotécnica?
             </a>
-            <Link to="/home#rehab" className="nav-item nav-link">
+            <Link to="/#rehab" className="nav-item nav-link">
               Processo
             </Link>
-            <Link to="/home#special" className="nav-item nav-link">
+            <Link to="/#special" className="nav-item nav-link">
               Especialidades
             </Link>
             <Link to="/produtos" className="nav-item nav-link">

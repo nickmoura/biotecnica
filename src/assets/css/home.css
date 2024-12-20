@@ -124,7 +124,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.30; /* Define a opacidade do fundo */
+    opacity: 0.15; /* Define a opacidade do fundo */
     z-index: -1; /* Joga a camada pra trás */
 }
 
@@ -1135,6 +1135,7 @@ footer {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    gap: 5rem;
 }
 
 .footer-item {
@@ -1200,6 +1201,10 @@ footer {
         font-size: 1.25rem !important;
     }
 
+    .footer-item {
+        padding: 0.25rem;
+    }
+
     .signature {
         flex-direction: column;
         gap: 0.5rem;
@@ -1227,7 +1232,7 @@ footer {
 
 @media screen and (min-width: 991.99px) {
     .footer {
-        padding: 0 5rem 5rem 5rem !important;
+        padding: 0 5rem 2rem 5rem !important;
     }
 }
 

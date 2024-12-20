@@ -1277,6 +1277,17 @@ footer {
     border: 0.25rem solid var(--secondary-color);
 }
 
+@media screen and (max-width: 991.98px){
+    .appointment-form {
+        padding: 1rem !important;
+    }
+
+    .appointment-form h2 {
+        font-size: 1.5rem;
+    }
+
+}
+
 .appointment .appointment-form p {
     border-bottom: 1px solid var(--third-color);
     padding-bottom: 0.5rem;

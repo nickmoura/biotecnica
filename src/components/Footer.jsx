@@ -25,7 +25,7 @@ const Footer = () => {
 					<div className="footer-item d-flex flex-column">
 						<h4 className="contact-info-header mb-4 text-white">Entre em contato</h4>
 						<a href="https://maps.app.goo.gl/R8YNTPuoatUjkdPP9"><i className="fa fa-map-marker-alt me-4"></i>
-							Rua Cônego Januário Barbosa, 218</a>
+							<span>Rua Cônego Januário Barbosa, 218 - CEP 18030-075 - Sorocaba/SP</span></a>
 						<a href="mailto:vendas@ortopediabiotecnica.com.br"><i className="fas fa-envelope me-4"></i>
 							vendas@ortopediabiotecnica.com.br</a>
 						<a href="tel:1532330616"><i className="fas fa-phone-alt me-4"></i> (15) 3233-0616</a>

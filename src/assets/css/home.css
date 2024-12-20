@@ -1233,6 +1233,7 @@ footer {
 @media screen and (min-width: 991.99px) {
     .footer {
         padding: 0 5rem 2rem 5rem !important;
+        gap: 3rem;
     }
 }
 

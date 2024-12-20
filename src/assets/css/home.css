@@ -347,7 +347,7 @@ main {
 @media (max-width: 991.98px) {
     .sticky-top.navbar-light {
         position: relative;
-        background: var(--bs-white);
+        background: var(--third-color);
     }
 
     .navbar.navbar-expand-lg .navbar-toggler {
@@ -357,7 +357,8 @@ main {
 
     .navbar.navbar-expand-lg .navbar-toggler,
     .navbar.navbar-expand-lg .navbar-toggler span {
-        color: var(--bs-primary);
+        color: var(--secondary-color);
+        border-color: var(--third-color);
     }
 
     .navbar-light .navbar-collapse {

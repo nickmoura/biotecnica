@@ -36,12 +36,12 @@ const Header = () => {
             <a href="/#why-choose" className="nav-item nav-link" data-active-link onClick={changeActivatedLink}>
               Por que a Biotécnica?
             </a>
-            <Link to="/#rehab" className="nav-item nav-link" data-active-link onClick={changeActivatedLink}>
+            <a href="/#rehab" className="nav-item nav-link" data-active-link onClick={changeActivatedLink}>
               Processo
-            </Link>
-            <Link to="/#special" className="nav-item nav-link" data-active-link onClick={changeActivatedLink}>
+            </a>
+            <a href="/#special" className="nav-item nav-link" data-active-link onClick={changeActivatedLink}>
               Especialidades
-            </Link>
+            </a>
             <Link to="/produtos" className="nav-item nav-link" data-active-link onClick={changeActivatedLink}>
               Produtos
             </Link>

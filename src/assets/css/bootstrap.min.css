@@ -4651,7 +4651,7 @@ fieldset:disabled .btn {
 	}
 }
 
-@media(min-width: 992px) {
+@media(min-width: 1320px) {
 	.navbar-expand-lg {
 		flex-wrap: nowrap;
 		justify-content: flex-start

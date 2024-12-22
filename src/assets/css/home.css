@@ -1145,13 +1145,10 @@ footer {
 }
 
 .footer-item i {
-    font-size: 1.5rem;
-    color: var(--secondary-color);
-}
-
-.footer-item a {
     display: flex;
-    align-content: center;
+    align-items: center;
+    font-size: 1.75rem;
+    color: var(--secondary-color);
 }
 
 .footer .footer-item a, .footer-item span {
@@ -1162,7 +1159,11 @@ footer {
     transition: 0.5s;
 }
 
-
+.footer-item a {
+    display: flex;
+    align-content: center;
+    gap: 0.75rem;
+}
 
 .footer .footer-item p {
     line-height: 35px;

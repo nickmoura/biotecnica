@@ -344,7 +344,7 @@ main {
     opacity: 1;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1320px) {
     .sticky-top.navbar-light {
         position: relative;
         background: var(--third-color);

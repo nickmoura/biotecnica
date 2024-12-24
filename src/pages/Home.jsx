@@ -4,24 +4,25 @@ const Home = () => {
 			{/* About Start */}
 			<section id="about">
 				<div className="container-fluid about py-5">
-					<div className="container py-5">
-						<div className="row g-5 align-items-center justify-content-center">
-							<div className="hero-text rounded col-lg-7 wow fadeInRight" data-wow-delay="0.4s">
-								<div className="section-title text-start">
-									<h1 className="display-3 mb-4 main-title">Inovação e Cuidado em Reabilitação</h1>
-									<p className="about-text mb-4"> Desde 1992, a Ortopedia Biotécnica se dedica a
-										transformar vidas por meio da reabilitação física.
-										Com mais de 30 anos de experiência, somos
-										especializados na fabricação de próteses e
-										órteses sob medida, utilizando a tecnologia para
-										atender às necessidades individuais de cada
-										paciente.</p>
-									<p className="about-text mb-4"> Além de nossa expertise em próteses e órteses,
-										oferecemos diversos de produtos ortopédicos e
-										materiais de auxílio à locomoção, como muletas,
-										andadores, cadeiras de rodas, entre outros.</p>
-								</div>
+					<h1 className="display-3 mb-4 main-title">Inovação e Cuidado em Reabilitação</h1>
+					<div className="about-content py-5">
+							<div className="hero-text" data-wow-delay="0.4s">
+
+								<p className="about-text"> Desde 1992, a Ortopedia Biotécnica se dedica a
+									transformar vidas por meio da reabilitação física.
+									Com mais de 30 anos de experiência, somos
+									especializados na fabricação de próteses e
+									órteses sob medida, utilizando a tecnologia para
+									atender às necessidades individuais de cada
+									paciente.</p>
+								<p className="about-text"> Além de nossa expertise em próteses e órteses,
+									oferecemos diversos de produtos ortopédicos e
+									materiais de auxílio à locomoção, como muletas,
+									andadores, cadeiras de rodas, entre outros.</p>
+
 							</div>
+						<div className="video-container">
+							<video controls src="/video/video.mp4"></video>
 						</div>
 					</div>
 				</div>

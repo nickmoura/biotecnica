@@ -29,8 +29,11 @@
 	--primary-color: #1F2C43; /* Pageant Blue */
 	--primary-color-rgb: 31, 44, 67; /* Pageant Blue com opacidade */
 	--secondary-color: #9BAEB5 ; /* Blue Fog */
+	--secondary-color-rgb: rgba(155, 174, 181, 0.125) ; /* Blue Fog com opacidade */
 	--third-color: #FFFFFF ; /* Bright White */
 	--fourth-color: #71757E; /* Mockingbird */
+	--fourth-color-rgb: rgb(113, 117, 126, 0.125); /* Mockingbird */
+
 	--bs-font-sans-serif: "Inter", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	--bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 	--bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))

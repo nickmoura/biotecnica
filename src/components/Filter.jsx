@@ -50,18 +50,18 @@ const Filter = ({ onFilterChange }) => {
   };
 
   return (
-    <div className="mb-3">
+    <div className="filters-area mb-4">
       <input
         type="text"
         name="searchTerm"
         value={filters.searchTerm}
         placeholder="Buscar produtos"
-        className="product-search form-control mb-2"
+        className="product-search form-control"
         onChange={handleInputChange}
       />
       <select
         name="category"
-        className="filter-dropdown form-select mb-2"
+        className="filter-dropdown form-select"
         value={filters.category}
         onChange={handleInputChange}
       >
@@ -75,7 +75,7 @@ const Filter = ({ onFilterChange }) => {
       {filters.category && categories[filters.category].length > 0 && (
         <select
           name="subcategory"
-          className="filter-dropdown form-select mb-2"
+          className="filter-dropdown form-select"
           value={filters.subcategory}
           onChange={handleInputChange}
         >

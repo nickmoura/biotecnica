@@ -2,6 +2,7 @@
 
 .products-hero {
 	padding: 2rem 0 2rem 0;
+	border-bottom: 0.125rem solid var(--fourth-color);
 }
 
 .products-title {
@@ -11,6 +12,11 @@
 	margin: 0;
 }
 
+.filter-dropdown:focus, .product-search:focus {
+	outline: 1px solid var(--primary-color);
+	;
+}
+
 .filter-dropdown {
 	border: 1px solid var(--fourth-color);
 	color: var(--fourth-color);
@@ -18,6 +24,12 @@
 
 .filter-dropdown option {
 	color: var(--fourth-color);
+}
+
+.filters-area {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
 }
 
 .product-search::placeholder {
@@ -40,9 +52,11 @@
 	background-color: var(--primary-color);
 	color: var(--third-color) !important;
 	padding: 0.5rem;
+	text-transform: uppercase;
 }
 
 .card-title {
+	text-align: center;
 	margin: 0;
 }
 

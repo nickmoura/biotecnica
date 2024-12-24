@@ -46,7 +46,7 @@ const Products = () => {
 				<h1 className="products-title">Produtos</h1>
 			</div>
 
-			<div className="py-5 px-3">
+			<div className="p-5">
 				{/* Componente de Filtro */}
 				<Filter onFilterChange={handleFilterChange} />
 				{/* Grid de Produtos Filtrados */}

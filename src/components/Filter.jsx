@@ -1,48 +1,98 @@
-const Filter = () => {
-	return (
-		<nav className="navbar bg-body-tertiary fixed-top">
-			<div className="container-fluid">
-				<a className="navbar-brand" href="#">Offcanvas navbar</a>
-				<button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-					<span className="navbar-toggler-icon"></span>
-				</button>
-				<div className="offcanvas offcanvas-end" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-					<div className="offcanvas-header">
-						<h5 className="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-						<button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-					</div>
-					<div className="offcanvas-body">
-						<ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
-							<li className="nav-item">
-								<a className="nav-link active" aria-current="page" href="#">Home</a>
-							</li>
-							<li className="nav-item">
-								<a className="nav-link" href="#">Link</a>
-							</li>
-							<li className="nav-item dropdown">
-								<a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-									Dropdown
-								</a>
-								<ul className="dropdown-menu">
-									<li><a className="dropdown-item" href="#">Action</a></li>
-									<li><a className="dropdown-item" href="#">Another action</a></li>
-									<li>
-										<hr className="dropdown-divider" />
-									</li>
-									<li><a className="dropdown-item" href="#">Something else here</a></li>
-								</ul>
-							</li>
-						</ul>
-						<form className="d-flex mt-3" role="search">
-							<input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-								<button className="btn btn-outline-success" type="submit">Search</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</nav>
-		
-	)
+import { useState } from 'react';
+import PropTypes from 'prop-types';
+
+const Filter = ({ onFilterChange }) => {
+  const [filters, setFilters] = useState({
+    category: '',
+    subcategory: '',
+    priceRange: '',
+    searchTerm: '',
+  });
+
+  const categories = {
+    'Calçados Ortopédicos': [],
+    'Órtese para Membro Superior': [
+      'Cinta',
+      'Cotoveleira',
+      'Espaldeira',
+      'Splints',
+      'Suporte',
+      'Tala',
+      'Tipoia',
+    ],
+    'Órtese para Tronco': ['Colete'],
+    'Órteses para Cabeça e Pescoço': ['Colar Cervical'],
+    'Órteses para Membros Inferiores': [
+      'Estabilizadora de tornozelo',
+      'Imobilizador',
+      'Joelheira',
+      'KAFO',
+      'Mola / Walk On',
+      'Órtese',
+      'Suspensório',
+      'Tutor',
+    ],
+    'Palmilhas Ortopédicas': ['Adulto', 'Infantil'],
+    'Próteses': ['Prótese de Mama Externa', 'Próteses Oculares'],
+  };
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    const updatedFilters = { ...filters, [name]: value };
+
+    // Resetar subcategoria se a categoria for alterada
+    if (name === 'category') {
+      updatedFilters.subcategory = '';
+    }
+
+    setFilters(updatedFilters);
+    onFilterChange(updatedFilters);
+  };
+
+  return (
+    <div className="mb-3">
+      <input
+        type="text"
+        name="searchTerm"
+        value={filters.searchTerm}
+        placeholder="Buscar produtos"
+        className="product-search form-control mb-2"
+        onChange={handleInputChange}
+      />
+      <select
+        name="category"
+        className="filter-dropdown form-select mb-2"
+        value={filters.category}
+        onChange={handleInputChange}
+      >
+        <option value="">Todas as categorias</option>
+        {Object.keys(categories).map((category) => (
+          <option key={category} value={category}>
+            {category}
+          </option>
+        ))}
+      </select>
+      {filters.category && categories[filters.category].length > 0 && (
+        <select
+          name="subcategory"
+          className="filter-dropdown form-select mb-2"
+          value={filters.subcategory}
+          onChange={handleInputChange}
+        >
+          <option value="">Todas as subcategorias</option>
+          {categories[filters.category].map((subcategory) => (
+            <option key={subcategory} value={subcategory}>
+              {subcategory}
+            </option>
+          ))}
+        </select>
+      )}
+    </div>
+  );
 };
 
-export {Filter}
+Filter.propTypes = {
+  onFilterChange: PropTypes.func.isRequired,
+};
+
+export default Filter;

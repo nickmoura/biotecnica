@@ -42,7 +42,7 @@ const Products = () => {
 
 	return (
 		<main>
-			<div className="products-hero about">
+			<div className="products-hero py-5">
 				<h1 className="products-title">Produtos</h1>
 			</div>
 

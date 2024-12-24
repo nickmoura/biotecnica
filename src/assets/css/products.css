@@ -3,6 +3,7 @@
 .products-hero {
 	position: relative;
 	z-index: 1;
+	border-bottom: 0.125rem solid var(--primary-color);
 }
 
 .products-hero::before {

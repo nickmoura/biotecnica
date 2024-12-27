@@ -105,7 +105,43 @@ const Products = () => {
 		},
 		{
 			id: 30, name: 'Colete de Milwalkee sem anel cervical', category: 'Órtese para Tronco', subcategory: 'Colete', image: '/img/products/colete-miwlakee-sem-2.jpg'
-		}
+		},
+		
+		{
+			id: 31, name: 'Colete de Putti', category: 'Órtese para Tronco', subcategory: 'Colete', image: '/img/products/colete-putti-2.jpg'
+		},
+
+		{
+			id: 32, name: 'Colete de Putti Alto', category: 'Órtese para Tronco', subcategory: 'Colete', image: '/img/products/colete-puttialto-2.jpg'
+		},
+		
+		{
+			id: 33, name: 'Colete de Putti Baixo', category: 'Órtese para Tronco', subcategory: 'Colete', image: '/img/products/colete-putti-baixo-2.jpg'
+		},
+
+		{
+			id: 34, name: 'Colete de Willians', category: 'Órtese para Tronco', subcategory: 'Colete', image: '/img/products/colete-willians-2.jpg'
+		},
+
+		{
+			id: 35, name: 'Colete Knight', category: 'Órtese para Tronco', subcategory: 'Colete', image: '/img/products/colete-kning-2.jpg'
+		},
+
+		{
+			id: 36, name: 'Colete Knight Taylor', category: 'Órtese para Tronco', subcategory: 'Colete', image: '/img/products/colete-knight-taylor-2.jpg'
+		},
+
+		{
+			id: 37, name: 'Colete T.L.S.O.', category: 'Órtese para Tronco', subcategory: 'Colete', image: '/img/products/foto208g-2.jpg'
+		},
+
+		{
+			id: 38, name: 'Compressor Torácico', category: 'Órtese para Tronco', subcategory: 'Colete', image: '/img/products/cmpressor-toracico-2.jpg'
+		},
+
+		{
+			id: 39, name: 'Faixa Torácica', category: 'Órtese para Tronco', subcategory: 'Colete', image: '/img/products/Produto-sem-foto.jpg'
+		},
 
 		// ... more products
 	]);
@@ -119,14 +155,18 @@ const Products = () => {
 	};
   
 	useEffect(() => {
-	  const { category, subcategory } = filters;
-	  const filtered = products.filter((product) => {
-		const matchesCategory = category ? product.category === category : true;
-		const matchesSubcategory = subcategory ? product.subcategory === subcategory : true;
-		return matchesCategory && matchesSubcategory;
-	  });
-	  setFilteredProducts(filtered);
-	}, [filters, products]);
+		const { category, subcategory, searchTerm } = filters;
+		const filtered = products.filter((product) => {
+		  const matchesCategory = category ? product.category === category : true;
+		  const matchesSubcategory = subcategory ? product.subcategory === subcategory : true;
+		  const matchesSearchTerm = searchTerm
+			? product.name.toLowerCase().includes(searchTerm.toLowerCase())
+			: true;
+	  
+		  return matchesCategory && matchesSubcategory && matchesSearchTerm;
+		});
+		setFilteredProducts(filtered);
+	  }, [filters, products]);
   
 	const productsPerPage = window.innerWidth <= 768 ? 3 : 10;
 	const paginatedProducts = filteredProducts.slice(

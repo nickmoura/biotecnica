@@ -1,30 +1,63 @@
 .pagination {
 	display: flex;
-	flex-wrap: wrap; /* Quebra os botões se o espaço for pequeno */
+	/* Quebra os botões se o espaço for pequeno */
 	justify-content: center;
-	gap: 8px; /* Espaçamento entre botões */
-	padding: 10px;
-  }
-  
-  .pagination button {
-	padding: 8px 12px;
-	border: 1px solid #ddd;
-	background: #f5f5f5;
+	gap: 0.5rem;
+	/* Espaçamento entre botões */
+	padding: 0.6rem;
+}
+
+.pagination button {
+	padding: 0.5rem 0.75rem;
+	border: 0.125rem solid #ddd;
+	border-radius: 0.6rem;
+	background: var(--primary-color-rgb);
+	color: var(--primary-color);
 	cursor: pointer;
-  }
-  
-  .pagination button.active {
-	background: #007bff;
+}
+
+.pagination button.active {
+	background: var(--fourth-color);
 	color: white;
-  }
-  
-  .pagination button:disabled {
+}
+
+.pagination button:disabled {
 	cursor: not-allowed;
 	opacity: 0.5;
-  }
-  
-  .pagination span {
+}
+
+.pagination span {
 	padding: 8px 12px;
 	color: #999;
-  }
-  
+}
+
+.pagination input {
+	border: 0.125rem solid var(--primary-color);
+	/* Borda padrão */
+	border-radius: 0.6rem;
+	/* Bordas arredondadas */
+	padding: 0.5rem 0.75rem;
+	/* Espaçamento interno */
+	font-size: 1.25rem;
+	/* Tamanho da fonte */
+	text-align: center;
+	/* Centraliza o texto */
+	outline: none;
+	/* Remove o contorno padrão ao focar */
+	transition: border-color 0.3s;
+	/* Suaviza a troca de borda */
+}
+
+.pagination input:focus {
+	border-color: #007bff;
+	/* Altera a cor da borda ao focar */
+	box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+	/* Efeito de brilho ao redor */
+}
+
+.pagination input::placeholder {
+	color: #aaa;
+	/* Cor do placeholder */
+	font-style: italic;
+	/* Estilo do placeholder */
+}

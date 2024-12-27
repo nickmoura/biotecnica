@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import Filter from '../components/Filter';
 import ProductsGrid from '../components/productsGrid';
+import Pagination from '../components/Pagination';
+
 
 const Products = () => {
 	const [products] = useState([
@@ -109,40 +111,46 @@ const Products = () => {
 	]);
 	const [filteredProducts, setFilteredProducts] = useState(products);
 	const [filters, setFilters] = useState({ category: '', subcategory: '' });
-
-	// Função que será chamada pelo Filter para atualizar os filtros
+	const [currentPage, setCurrentPage] = useState(1);
+  
 	const handleFilterChange = (newFilters) => {
-		setFilters(newFilters);
+	  setFilters(newFilters);
+	  setCurrentPage(1); // Reseta para a primeira página ao aplicar filtros
 	};
-
-	// Efeito para aplicar o filtro
+  
 	useEffect(() => {
-		const { category, subcategory } = filters;
-
-		// Filtra os produtos com base nos filtros aplicados
-		const filtered = products.filter((product) => {
-			const matchesCategory = category ? product.category === category : true;
-			const matchesSubcategory = subcategory ? product.subcategory === subcategory : true;
-			return matchesCategory && matchesSubcategory;
-		});
-
-		setFilteredProducts(filtered);
-	}, [filters, products]); // Rerun effect when filters or products change
-
-	return (
-		<main>
-			<div className="products-hero py-5">
-				<h1 className="products-title">Produtos</h1>
-			</div>
-
-			<div className="p-5">
-				{/* Componente de Filtro */}
-				<Filter onFilterChange={handleFilterChange} />
-				{/* Grid de Produtos Filtrados */}
-				<ProductsGrid products={filteredProducts} />
-			</div>
-		</main>
+	  const { category, subcategory } = filters;
+	  const filtered = products.filter((product) => {
+		const matchesCategory = category ? product.category === category : true;
+		const matchesSubcategory = subcategory ? product.subcategory === subcategory : true;
+		return matchesCategory && matchesSubcategory;
+	  });
+	  setFilteredProducts(filtered);
+	}, [filters, products]);
+  
+	const productsPerPage = window.innerWidth <= 768 ? 3 : 10;
+	const paginatedProducts = filteredProducts.slice(
+	  (currentPage - 1) * productsPerPage,
+	  currentPage * productsPerPage
 	);
-};
-
-export default Products;
+  
+	return (
+	  <main>
+		<div className="products-hero py-5">
+		  <h1 className="products-title">Produtos</h1>
+		</div>
+		<div className="p-5">
+		  <Filter onFilterChange={handleFilterChange} />
+		  <ProductsGrid products={paginatedProducts} />
+		  <Pagination
+			currentPage={currentPage}
+			totalItems={filteredProducts.length}
+			itemsPerPage={productsPerPage}
+			onPageChange={(page) => setCurrentPage(page)}
+		  />
+		</div>
+	  </main>
+	);
+  };
+  
+  export default Products;

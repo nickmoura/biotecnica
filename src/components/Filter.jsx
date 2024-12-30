@@ -23,6 +23,7 @@ const Filter = ({ onFilterChange }) => {
     'Órtese para Tronco': ['Colete'],
     'Órteses para Cabeça e Pescoço': ['Colar Cervical'],
     'Órteses para Membros Inferiores': [
+      'AFO',
       'Estabilizadora de tornozelo',
       'Imobilizador',
       'Joelheira',

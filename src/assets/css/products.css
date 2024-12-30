@@ -28,7 +28,14 @@
 	margin: 0;
 }
 
-
+.products-subtitle {
+	margin: 0;
+	text-align: justify;
+	color: var(--primary-color);
+	text-shadow: .125rem .125rem .25rem var(--third-color);
+	font-weight: bold;
+	text-indent: 0.75rem;
+}
 
 .filter-dropdown,
 .product-search {

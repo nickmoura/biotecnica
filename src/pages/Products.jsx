@@ -237,18 +237,86 @@ const Products = () => {
 			id: 67, name: 'Walk On órtese em fibra de carbono', category: 'Órtese para Membros Superiores', subcategory: 'Mola/Walk On', image: '/img/products/walk-on-2.jpg'
 		},
 		{
-			id: 68, name: 'Palmilha com "U" Assimétrico', category: 'Palmilha', subcategory: 'Adulta', image: '/img/products/palmilha-com-U-2.jpg'
+			id: 68, name: 'Palmilha com "U" Assimétrico', category: 'Palmilhas Ortopédicas', subcategory: 'Adulto', image: '/img/products/palmilha-com-U-2.jpg'
 		},
 		{
-			id: 69, name: 'Palmilha com Amortecedor de Calcâneo e Piloto', category: 'Palmilha', subcategory: 'Adulta', image: '/img/products/palmilha-com-amortecedor-2.jpg'
+			id: 69, name: 'Palmilha com Amortecedor de Calcâneo e Piloto', category: 'Palmilhas Ortopédicas', subcategory: 'Adulto', image: '/img/products/palmilha-com-amortecedor-2.jpg'
 		},
 		{
-			id: 70, name: 'Palmilha com Apoio Retrocapital (Piloto)', category: 'Palmilha', subcategory: 'Adulta', image: '/img/products/palmilha-com-apoio-2.jpg'
+			id: 70, name: 'Palmilha com Apoio Retrocapital (Piloto)', category: 'Palmilhas Ortopédicas', subcategory: 'Adulto', image: '/img/products/palmilha-com-apoio-2.jpg'
 		},
 		{
-			id: 71, name: 'Palmilha com Arco de Cunha Medial no Retropé', category: 'Palmilha', subcategory: 'Adulta', image: '/img/products/palmilha-com-arco-2.jpg'
+			id: 71, name: 'Palmilha com Arco de Cunha Medial no Retropé', category: 'Palmilhas Ortopédicas', subcategory: 'Adulto', image: '/img/products/palmilha-com-arco-2.jpg'
 		},
-
+		{
+			id: 72, name: 'Palmilha com Barra Metatarsal', category: 'Palmilhas Ortopédicas', subcategory: 'Adulto', image: '/img/products/palmilha-com-barra-2.jpg'
+		},
+		{
+			id: 73, name: 'Palmilha com Cunha Lateral no Retropé', category: 'Palmilhas Ortopédicas', subcategory: 'Adulto', image: '/img/products/palmilha-c-cunha-lateral-3.jpg'
+		},
+		{
+			id: 74, name: 'Palmilha com Cunha Pronadora do Antepé', category: 'Palmilhas Ortopédicas', subcategory: 'Adulto', image: '/img/products/palmilha-c-cunha-lateral-1-2.jpg'
+		},
+		{
+			id: 75, name: 'Palmilha com Cunha Pronadora do Antepé', category: 'Palmilhas Ortopédicas', subcategory: 'Adulto', image: '/img/products/palmilha-c-cunha-lateral-1-2.jpg'
+		},
+		{
+			id: 76, name: 'Palmilha com reforço no arco longitudinal', category: 'Palmilhas Ortopédicas', subcategory: 'Adulto', image: '/img/products/palmilha-com-reforco-2.jpg'
+		},
+		{
+			id: 77, name: 'Palmilha Dinâmica', category: 'Palmilhas Ortopédicas', subcategory: 'Adulto', image: '/img/products/palmilha-dinamica-2.jpg'
+		},
+		{
+			id: 78, name: 'Palmilha Helicoidal', category: 'Palmilhas Ortopédicas', subcategory: 'Adulto', image: '/img/products/palmilha-helico-2.jpg'
+		},
+		{
+			id: 79, name: 'Palmilha Valente - correção 1 (infantil)', category: 'Palmilhas Ortopédicas', subcategory: 'Infantil', image: '/img/products/palmilha-inf-1-2.jpg'
+		},
+		{
+			id: 80, name: 'Palmilha Valente - correção 1 (adulta)', category: 'Palmilhas Ortopédicas', subcategory: 'Adulto', image: '/img/products/palmilha-adulto-1-2.jpg'
+		},
+		{
+			id: 81, name: 'Palmilha Valente – Correção 2 (infantil)', category: 'Palmilhas Ortopédicas', subcategory: 'Infantil', image: '/img/products/Produto-sem-foto.jpg'
+		},
+		{
+			id: 82, name: 'Palmilha Valente – Correção 2 (adulto)', category: 'Palmilhas Ortopédicas', subcategory: 'Adulto', image: '/img/products/palmilha-com-reforco-2.jpg'
+		},
+		{
+			id: 83, name: 'Palmilha Valente – Correção 3 (infantil)', category: 'Palmilhas Ortopédicas', subcategory: 'Adulto', image: '/img/products/palmilha-com-reforco-2.jpg', description: 'A Palmilha Valente – Correção 3 é indicada para a cunha pronadora do antepé com ¼ de esfera no navicular.'
+		},
+		{
+			id: 84, name: 'Palmilha Valente – Correção 3 (adulta)', category: 'Palmilhas Ortopédicas', subcategory: 'Adulto', image: '/img/products/palmilha-adulto-3-2.jpg', description: 'Apoio acentuado da abóbada plantar, cunha varizante do retropé.'
+		},
+		{
+			id: 85, name: 'Palmilha Valente – Correção 4 (infantil)', category: 'Palmilhas Ortopédicas', subcategory: 'Adulto', image: '/img/products/palmilha-inf-4-2.jpg', description: 'A Palmilha Valente – Correção 4 é indicada para cunha varizante no retropé e pronadora do antepé com ¼ de esfera no navicular.'
+		},
+		{
+			id: 86, name: 'Palmilha Valente – Correção 4 (adulto)', category: 'Palmilhas Ortopédicas', subcategory: 'Adulto', image: '/img/products/palmilha-adulto-4-2.jpg', description: 'Apoio acentuado da abóbada plantar, cunha varizante do retropé e cunha pronadora.'
+		},
+		{
+			id: 87, name: 'Palmilha Valente – Correção 5 (infantil)', category: 'Palmilhas Ortopédicas', subcategory: 'Adulto', image: '/img/products/Produto-sem-foto.jpg', description: 'Alertas para correção de adução do ente-pé no primeiro metatarso e no cuboide com apófise do calcâneo.'
+		},
+		{
+			id: 88, name: 'Palmilha Valente – Correção 5 (adulto)', category: 'Palmilhas Ortopédicas', subcategory: 'Adulto', image: '/img/products/palmilha-adulto-5-2.jpg', description: 'A Palmilha Valente – Correção 5 é indicada para apoio da abóbada planar com “U” assimétrico no calcâneo e amortecedor.'
+		},
+		{
+			id: 89, name: 'Maiôs pós-mastectomia', category: 'Próteses', subcategory: 'Prótese de Mama Externa', image: '/img/products/Maio-protese-mamaria-2.jpg', description: 'Desenvolvido especialmente para mulheres submetidas a operações de mastectomia.'
+		},
+		{
+			id: 90, name: 'Prótese Mamária Gota 1', category: 'Próteses', subcategory: 'Prótese de Mama Externa', image: '/img/products/protese-mamaria-gota-2.jpg', description: 'Indicada para casos de cirurgia da mastectomia radical, com perda total do tecido . Complemento mamário de silicone simetricamente adaptável e maior textura.'
+		},
+		{
+			id: 91, name: 'Prótese Mamária Gota 2', category: 'Próteses', subcategory: 'Prótese de Mama Externa', image: '/img/products/protese-mamaria-gota-802-2.jpg', description: 'Desenvolvida para pacientes de baixo poder aquisitivo e nos casos de mastectomia radical com perda total do tecido. Complemento mamário de silicone simetricamente adaptável sem pigmentação.'
+		},
+		{
+			id: 92, name: 'Prótese Mamária Triangular 1', category: 'Próteses', subcategory: 'Prótese de Mama Externa', image: '/img/products/protese-mamaria-triangular-2.jpg', description: 'Pacientes com pouca perda de tecido. Desenvolvido para atender mulheres que sofrem de assimetria mamária, contribuindo na recuperação emocional e psicologia bem como na retomada de vida normal do corpo.'
+		},
+		{
+			id: 93, name: 'Prótese Mamária Triangular 2', category: 'Próteses', subcategory: 'Prótese de Mama Externa', image: '/img/products/protese-mamaria-triangular-2.jpg', description: 'Pacientes com pouca perda de tecido. Complemento mamário de silicone simetricamente adaptável, anatomicamente desenvolvido para perfeito contato com o corpo e parte interna côncava para maior conforto.'
+		},
+		{
+			id: 94, name: 'Soutien Pós Mastectomia', category: 'Próteses', subcategory: 'Próteses oculares', image: '/img/products/sutia-protese-mamaria-2.jpg', description: 'Modelo desenvolvido especialmente para mulheres submetidas a operações de mastectomia. Forrado internamente com algodão nos dois bojos.'
+		},
 
 		// ... more products
 	]);

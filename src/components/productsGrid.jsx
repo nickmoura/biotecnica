@@ -65,7 +65,7 @@ const ProductsGrid = ({ products, currentPage, totalPages, onPageChange }) => {
               Categoria: {selectedProduct.category}
               {selectedProduct.subcategory && ` > ${selectedProduct.subcategory}`}
             </p>
-			<p>
+			<p  className='product-description'>
 				{selectedProduct.description}
 			</p>
           </div>

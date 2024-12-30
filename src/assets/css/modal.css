@@ -12,13 +12,23 @@
 }
 
 .popup-content {
-	background-color: var(--secondary-color);
+	background-color: var(--third-color);
 	padding: 1.25rem;
 	border: 0.125rem solid var(--primary-color);
-	border-radius: 0.75rem;
+	border-radius: 2rem;
 	max-width: 300px;
 	text-align: center;
 	position: relative;
+}
+
+.popup-content h2,
+.popup-content p {
+	color: var(--primary-color);
+}
+
+.product-description {
+	hyphens: auto;
+	text-align: justify;
 }
 
 .popup-img {
@@ -30,12 +40,12 @@
 
 .close-btn {
 	color: var(--primary-color);
-	font-weight: 700;
+	font-weight: 400;
 	position: absolute;
-	top: 2.5px;
-	right: 7.5px;
+	top: -3rem;
+	right: -1.5rem;
 	background: none;
 	border: none;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	cursor: pointer;
 }

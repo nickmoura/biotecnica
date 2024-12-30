@@ -6,7 +6,7 @@ const ProductModal = ({ isOpen, product, onClose }) => {
 	return (
 		<div className="modal-overlay">
 			<div className="modal-content">
-				<button className="close-btn" onClick={onClose} ><i className="fa-solid fa-x"></i></button>
+				<button className="close-btn" onClick={onClose} ><i className="fa-thin fa-x"></i></button>
 				<img src={product.image} alt={product.name} className="modal-img" />
 				<h2>{product.name}</h2>
 				<p>{product.description || 'Sem descrição disponível.'}</p>

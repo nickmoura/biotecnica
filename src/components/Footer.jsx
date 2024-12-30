@@ -4,7 +4,7 @@ const Footer = () => {
 			<div className="footer-line row g-5">
 				<div className="col-md-6 col-lg-6 col-xl-3 footer-social-container">
 					<div className="footer-item d-flex flex-column footer-social-area">
-						<a href="index.html" className="navbar-brand p-0">
+						<a href="/" className="navbar-brand p-0">
 							<img src="./img/biotecnica-logo-branco-cortado.png" alt="Logo" style={{ height: '65px' }} />
 						</a>
 						<p>Confira nossas redes sociais:</p>

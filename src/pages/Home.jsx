@@ -1,4 +1,17 @@
+import { useState } from "react";
+import { aplicarMascaraCelular } from "../assets/js/whatsappMask";
+
+
 const Home = () => {
+
+	const [celular, setCelular] = useState("");
+
+	const handleInputChange = (e) => {
+		const valor = e.target.value;
+		const valorFormatado = aplicarMascaraCelular(valor);
+		setCelular(valorFormatado);
+	};
+
 	return (
 		<main>
 			{/* About Start */}
@@ -306,8 +319,8 @@ const Home = () => {
 							</div>
 						</div>
 						<div className="col-lg-6 wow fadeInRight" data-wow-delay="0.4s">
-							<div className="appointment-form rounded p-5">
-								<p className="fs-4 text-uppercase">Entre em contato</p>
+							<div className="appointment-form rounded py-4 px-5">
+								<p className="contact-us fs-4 text-uppercase">Entre em contato</p>
 								<h2 className="display-5 mb-4">Agende sua avaliação!</h2>
 								<form id="contact-form" action="https://formspree.io/f/mqakkdvg" method="POST">
 									<div className="row gy-3 gx-4">
@@ -320,8 +333,13 @@ const Home = () => {
 												placeholder="Seu e-mail" name="E-mail" />
 										</div>
 										<div className="col-xl-6">
-											<input type="phone" id="celular" className="form-control py-3 border-primary-input"
-												placeholder="Seu telefone (WhatsApp)" name="WhatsApp" />
+											<input type="text"
+												id="celular"
+												className="form-control py-3 border-primary-input"
+												placeholder="Seu telefone (WhatsApp)"
+												name="WhatsApp"
+												value={celular}
+												onChange={handleInputChange} />
 										</div>
 										<div className="col-xl-6">
 											<input type="number" placeholder="Idade do paciente"
@@ -347,11 +365,13 @@ const Home = () => {
 										</div>
 										<div className="col-12">
 											<textarea className="form-control border-primary-input" name="text" id="area-text"
-												cols="30" rows="5" placeholder="Escreva aqui"></textarea>
+												cols="30" rows="2" placeholder="Escreva aqui"></textarea>
 										</div>
 										<div className="col-12">
 											<button onClick="handleSubmit()" type="submit"
 												className="submit-contact btn btn-primary w-100 py-3 px-5">Enviar</button>
+											<p className="agree-lgpd fs-10">Ao clicar em &quot;enviar&quot;, você concorda com a política de privacidade disponível em nosso site. <a href="/LGPD">Clique aqui para lê-la</a>.</p>
+
 										</div>
 									</div>
 								</form>

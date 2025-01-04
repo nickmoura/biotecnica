@@ -45,6 +45,9 @@ const Header = () => {
             <Link to="/produtos" className="nav-item nav-link" data-active-link onClick={changeActivatedLink}>
               Produtos
             </Link>
+            <Link to="/dados" className="nav-item nav-link" data-active-link onClick={changeActivatedLink}>
+              Dados
+            </Link>
           </div>
           <a href="https://api.whatsapp.com/send?phone=5515996387470"
             className="navbar-schedule btn btn-primary rounded-pill py-2 px-4 flex-wrap flex-sm-shrink-0"

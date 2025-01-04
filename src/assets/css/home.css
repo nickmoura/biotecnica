@@ -640,14 +640,6 @@ main {
 /*** Feature End ***/
 
 /*** Appointment Start ***/
-.appointment {
-    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../img/carousel-2.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
 .appointment .appointment-form {
     background: var(--primary-color);
 }
@@ -1269,7 +1261,6 @@ footer {
 
 
 .appointment-form {
-    padding: 2rem !important;
     border: 0.25rem solid var(--secondary-color);
 }
 
@@ -1284,10 +1275,15 @@ footer {
 
 }
 
-.appointment .appointment-form p {
+.contact-us {
     border-bottom: 1px solid var(--third-color);
     padding-bottom: 0.5rem;
+}
 
+.agree-lgpd {
+    border-top: 1px solid var(--third-color);
+    margin: 1rem 0 0 0;
+    padding-top: 0.5rem;
 }
 
 .appointment .appointment-form h2,

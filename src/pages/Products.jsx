@@ -7,7 +7,7 @@ import Pagination from '../components/Pagination';
 const Products = () => {
 	const [products] = useState([
 		{
-			id: 1, name: 'AFO – Órtese Curta Articulada', category: 'Órteses para Membros Inferiores', subcategory: 'AFO', image: '/img/products/afo-curta-articulada-com-cinta-2.jpg', description: ''
+			id: 1, name: 'AFO – Órtese Curta Articulada', category: 'Órteses para Membros Inferiores', subcategory: 'AFO', image: '/img/products/afo-curta-articulada-com-cinta-2.jpg', description: 'Indicada para estabilização da medial e lateral do tornozelo, permitindo o bloqueio da flexão plantar. Pode ser confeccionada sem bloqueio, com bloqueio da flexão plantar e dorsal livre.'
 		},
 		{
 			id: 2, name: 'AFO – Órtese Curta de Reação ao Solo', category: 'Órteses para Membros Inferiores', subcategory: 'AFO', image: '/img/products/afo-curta-reacao-2.jpg'

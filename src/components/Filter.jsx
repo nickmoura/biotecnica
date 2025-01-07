@@ -16,6 +16,7 @@ const Filter = ({ onFilterChange }) => {
       'Cotoveleira',
       'Espaldeira',
       'Splints',
+      'Ombreira',
       'Suporte',
       'Tala',
       'Tipoia',

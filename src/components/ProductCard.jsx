@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 
 const ProductCard = ({ product, onClick }) => (
-  <div className="col-md-4 mb-4">
+  <div className="col-md-3 mb-4">
     <div className="card product-card" onClick={() => onClick(product)}>
-      <div className="product-image-area py-3">
+      <div className="product-image-area p-3">
         <img src={product.image} alt={product.name} className="product-img" />
       </div>
       <div className="card-body">

@@ -318,7 +318,7 @@ const Products = () => {
 		setFilteredProducts(filtered);
 	}, [filters, products]);
 
-	const productsPerPage = window.innerWidth <= 768 ? 3 : 10;
+	const productsPerPage = window.innerWidth < 768 ? 3 : 8;
 	const paginatedProducts = filteredProducts.slice(
 		(currentPage - 1) * productsPerPage,
 		currentPage * productsPerPage

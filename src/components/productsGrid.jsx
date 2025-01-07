@@ -17,13 +17,13 @@ const ProductsGrid = ({ products, currentPage, totalPages, onPageChange }) => {
     <div>
       <div className="row">
         {products.map((product) => (
-          <div className="col-md-4 mb-4" key={product.id}>
+          <div className="col-md-3 mb-4" key={product.id}>
             <div
               className="card product-card"
               onClick={() => handleProductClick(product)}
               style={{ cursor: 'pointer' }}
             >
-              <div className="product-image-area py-3">
+              <div className="product-image-area p-3">
                 <img
                   src={product.image}
                   alt={product.name}

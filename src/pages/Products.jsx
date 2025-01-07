@@ -20,7 +20,7 @@ const Products = () => {
 			id: 4, name: 'AFO – Tutor Curto', category: 'Órteses para Membros Inferiores', subcategory: 'AFO', image: '/img/products/tutor-curto-2.jpg'
 		},
 		{
-			id: 5, name: 'Órtese Curta Articulada com Contorno', category: 'Órteses para Membros Inferiores', subcategory: 'Órtese', image: '/img/products/afo-curta-articulada-com-cinta-425-2-300x300.jpg'
+			id: 5, name: 'Órtese Curta Articulada com Contorno', category: 'Órteses para Membros Inferiores', subcategory: 'Órtese', image: '/img/products/afo-curta-articulada-com-cinta-425-2.jpg'
 		},
 		{
 			id: 6, name: 'Órtese de Reciprocação (RGO – ARGO)', category: 'Órteses para Membros Inferiores', subcategory: 'Órtese', image: '/img/products/ortese-reciprocacao-2.jpg'
@@ -177,7 +177,7 @@ const Products = () => {
 			id: 48, name: 'Joelheira em Neoprene Articulada', category: 'Órtese para Membros Inferiores', subcategory: 'Joelheira', image: '/img/products/joelheira-articulada-2.jpg'
 		},
 		{
-			id: 49, name: 'Joelheira em Neoprene com Orifício', category: 'Órtese para Membros Inferiores', subcategory: 'Joelheira', image: '/img/products/joelheira-articulada-2.jpg'
+			id: 49, name: 'Joelheira em Neoprene com Orifício', category: 'Órtese para Membros Inferiores', subcategory: 'Joelheira', image: '/img/products/joelheira-orificio-2.jpg'
 		},
 		{
 			id: 50, name: 'Joelheira em Neoprene Articulada', category: 'Órtese para Membros Inferiores', subcategory: 'Joelheira', image: '/img/products/joelheira-orificio-2.jpg'
@@ -195,22 +195,19 @@ const Products = () => {
 			id: 54, name: 'KAFO – Tutor Longo Bilateral com Cinto Pélvico', category: 'Órtese para Membros Inferiores', subcategory: 'KAFO', image: '/img/products/kafo-401-2.jpg'
 		},
 		{
-			id: 55, name: 'KAFO – Unilateral com Trava Suíca', category: 'Órtese para Membros Inferiores', subcategory: 'KAFO', image: '/img/products/kafo-401-2.jpg'
+			id: 55, name: 'KAFO – Unilateral com Trava Suíça', category: 'Órtese para Membros Inferiores', subcategory: 'KAFO', image: '/img/products/kafo-4003-2.jpg'
 		},
 		{
 			id: 56, name: 'Mola de Codivilla', category: 'Órtese para Membros Inferiores', subcategory: 'Mola/Walk On', image: '/img/products/mola-codivilla-2.jpg'
 		},
 		{
-			id: 57, name: 'Órtese Curta Articulada com Contorno', category: 'Órtese para Membros Inferiores', subcategory: 'Órtese', image: '/img/products/afo-curta-articulada-com-cinta-425-2.jpg'
+			id: 57, name: 'Órtese Estabilizadora de Joelho', category: 'Órtese para Membros Inferiores', subcategory: 'Órtese estabilizadora', image: '/img/products/ortese-estbilizadora-joelho-2.jpg'
 		},
 		{
-			id: 58, name: 'Órtese Estabilizadora de Joelho', category: 'Órtese para Membros Inferiores', subcategory: 'Órtese estabilizadora', image: '/img/products/ortese-estbilizadora-joelho-2.jpg'
+			id: 58, name: 'Órtese Estabilizadora de Quadril', category: 'Órtese para Membros Inferiores', subcategory: 'Órtese estabilizadora', image: '/img/products/Produto-sem-foto.jpg'
 		},
 		{
-			id: 59, name: 'Órtese Estabilizadora de Quadril', category: 'Órtese para Membros Inferiores', subcategory: 'Órtese estabilizadora', image: '/img/products/Produto-sem-foto.jpg'
-		},
-		{
-			id: 60, name: 'Órtese estabilizadora de tornozelo', category: 'Órtese para Membros Inferiores', subcategory: 'Órtese estabilizadora', image: '/img/products/ortese-estabiliz-tornozelo-2.jpg'
+			id: 59, name: 'Órtese estabilizadora de tornozelo', category: 'Órtese para Membros Inferiores', subcategory: 'Órtese estabilizadora', image: '/img/products/ortese-estabiliz-tornozelo-2.jpg'
 		},
 		{
 			id: 60, name: 'Órtese Noturna/Genu Valgo/Varo', category: 'Órtese para Membros Inferiores', subcategory: 'Órtese', image: '/img/products/ortese-noturna-2.jpg'

@@ -1,10 +1,9 @@
 import { useState, useEffect } from 'react';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Filter from '../components/Filter';
 import ProductsGrid from '../components/productsGrid';
 import Pagination from '../components/Pagination';
-import { Link } from 'react-router-dom';
 
 const Products = ({ cart, addToCart }) => { // Recebe cart e addToCart como props
   const [products] = useState([

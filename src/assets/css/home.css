@@ -1286,6 +1286,11 @@ footer {
     padding-top: 0.5rem;
 }
 
+.read-lgpd {
+    color: var(--third-color);
+    font-weight: 700;
+}
+
 .appointment .appointment-form h2,
 .appointment .appointment-form p {
     text-align: center;

@@ -28,6 +28,7 @@
 
 .product-description {
 	hyphens: auto;
+	text-indent: 1rem;
 	text-align: justify;
 }
 

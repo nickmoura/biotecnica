@@ -1,11 +1,13 @@
 import { useState, useEffect } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Filter from '../components/Filter';
 import ProductsGrid from '../components/productsGrid';
 import Pagination from '../components/Pagination';
+import { Link } from 'react-router-dom';
 
-
-const Products = () => {
-	const [products] = useState([
+const Products = ({ cart, addToCart }) => { // Recebe cart e addToCart como props
+  const [products] = useState([
 		{
 			id: 1, name: 'AFO – Órtese Curta Articulada', category: 'Órteses para Membros Inferiores', subcategory: 'AFO', image: '/img/products/afo-curta-articulada-com-cinta-2.jpg', description: 'Indicada para estabilização da medial e lateral do tornozelo, permitindo o bloqueio da flexão plantar. Pode ser confeccionada sem bloqueio, com bloqueio da flexão plantar e dorsal livre.'
 		},
@@ -295,59 +297,63 @@ const Products = () => {
 			id: 96, name: 'Soutien Pós Mastectomia', category: 'Próteses', subcategory: 'Prótese de Mama Externa', image: '/img/products/sutia-protese-mamaria-2.jpg', description: 'Modelo desenvolvido especialmente para mulheres submetidas a operações de mastectomia. Forrado internamente com algodão nos dois bojos.'
 		}
 	]);
+
 	const [filteredProducts, setFilteredProducts] = useState(products);
 	const [filters, setFilters] = useState({ category: '', subcategory: '' });
 	const [currentPage, setCurrentPage] = useState(1);
-
+  
 	const handleFilterChange = (newFilters) => {
-		setFilters(newFilters);
-		setCurrentPage(1); // Reseta para a primeira página ao aplicar filtros
+	  setFilters(newFilters);
+	  setCurrentPage(1);
 	};
-
+  
 	useEffect(() => {
-		const { category, subcategory, searchTerm } = filters;
-		const filtered = products.filter((product) => {
-			const matchesCategory = category ? product.category === category : true;
-			const matchesSubcategory = subcategory ? product.subcategory === subcategory : true;
-			const matchesSearchTerm = searchTerm
-				? product.name.toLowerCase().includes(searchTerm.toLowerCase())
-				: true;
-
-			return matchesCategory && matchesSubcategory && matchesSearchTerm;
-		});
-		setFilteredProducts(filtered);
+	  const { category, subcategory, searchTerm } = filters;
+	  const filtered = products.filter((product) => {
+		const matchesCategory = category ? product.category === category : true;
+		const matchesSubcategory = subcategory ? product.subcategory === subcategory : true;
+		const matchesSearchTerm = searchTerm
+		  ? product.name.toLowerCase().includes(searchTerm.toLowerCase())
+		  : true;
+  
+		return matchesCategory && matchesSubcategory && matchesSearchTerm;
+	  });
+	  setFilteredProducts(filtered);
 	}, [filters, products]);
-
+  
 	const productsPerPage = window.innerWidth <= 768 ? 3 : 8;
 	const paginatedProducts = filteredProducts.slice(
-		(currentPage - 1) * productsPerPage,
-		currentPage * productsPerPage
+	  (currentPage - 1) * productsPerPage,
+	  currentPage * productsPerPage
 	);
-
+  
 	return (
-		<main>
-			<div className="products-hero py-5 px-4">
-				<h1 className="products-title">Produtos</h1>
-				<p className='products-subtitle'>Os produtos da Ortopedia Biotécnica oferecem soluções de alta qualidade para a reabilitação e o conforto dos clientes.</p>
-				<p className='products-subtitle'>Clique ou toque em cada produto para saber mais.</p>
+	  <main>
+		<div className="products-hero py-5 px-4">
+		  <h1 className="products-title">Produtos</h1>
+		  <p className='products-subtitle'>Os produtos da Ortopedia Biotécnica oferecem soluções de alta qualidade para a reabilitação e o conforto dos clientes.</p>
+		  <p className='products-subtitle'>Clique ou toque em cada produto para saber mais.</p>
+		</div>
+		<div className="p-5">
+		  <div className="layout-container">
+			<Filter onFilterChange={handleFilterChange} />
+			<div className="products-section">
+			  <ProductsGrid
+				products={paginatedProducts}
+				addToCart={addToCart} // Passando a função addToCart para ProductsGrid
+			  />
+			  <Pagination
+				currentPage={currentPage}
+				totalItems={filteredProducts.length}
+				itemsPerPage={productsPerPage}
+				onPageChange={(page) => setCurrentPage(page)}
+			  />
 			</div>
-			<div className="p-5">
-				<div className="layout-container">
-					<Filter onFilterChange={handleFilterChange} />
-					<div className="products-section">
-						<ProductsGrid products={paginatedProducts} />
-						<Pagination
-							currentPage={currentPage}
-							totalItems={filteredProducts.length}
-							itemsPerPage={productsPerPage}
-							onPageChange={(page) => setCurrentPage(page)}
-						/>
-					</div>
-				</div>
-			</div>
-
-		</main>
+		  </div>
+		</div>
+		<ToastContainer /> {/* Container do Toastify */}
+	  </main>
 	);
-};
-
-export default Products;
+  };
+  
+  export default Products;

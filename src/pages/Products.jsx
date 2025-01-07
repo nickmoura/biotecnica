@@ -106,7 +106,7 @@ const Products = () => {
 			id: 33, name: 'KAFO – Unilateral com Trava Suíça', category: 'Órtese para Membros Inferiores', subcategory: 'KAFO', image: '/img/products/kafo-4003-2.jpg', description: 'O KAFO – Unilateral com Trava Suíca é indicado para a deambulação e ortostatismo em pacientes com paralisia no membro inferior D ou E, pacientes que não controlam o joelho. A articulação do joelho pode ser livre ou bloqueada com travas em anel ou suíca.'
 		},
 		{
-			id: 34, name: 'Mola de Codivilla', category: 'Órtese para Membros Inferiores', subcategory: 'Mola/Walk On', image: '/img/products/mola-codivilla-2.jpg', description: 'Paralisia do músculo tibial anterior. Não se presta conter grandes forças deformantes e muito menos a correção do varismo ou valgismo através de tiras em “T” ou em “Y”.'
+			id: 34, name: 'Mola de Codivilla', category: 'Órtese para Membros Inferiores', subcategory: 'Mola / Walk On', image: '/img/products/mola-codivilla-2.jpg', description: 'Paralisia do músculo tibial anterior. Não se presta conter grandes forças deformantes e muito menos a correção do varismo ou valgismo através de tiras em “T” ou em “Y”.'
 		},
 		{
 			id: 35, name: 'Órtese Curta Articulada com Contorno', category: 'Órteses para Membros Inferiores', subcategory: 'Órtese', image: '/img/products/afo-curta-articulada-com-cinta-425-2.jpg', description: 'Indicado para estabilização da medial e lateral, do tornozelo, permitindo o bloqueio da flexão plantar. Pode ser confeccionada sem bloqueio, com bloqueio da flexão plantar e dorsal livre. Alta qualidade no desempenho da articulação, podendo modificar facilmente o grau de amplitude.'
@@ -127,7 +127,7 @@ const Products = () => {
 			id: 40, name: 'Órtese Estabilizadora de Quadril', category: 'Órtese para Membros Inferiores', subcategory: 'Órtese estabilizadora', image: '/img/products/Produto-sem-foto.jpg', description: 'A Órtese Estabilizadora de Quadril é indicada para limitar os movimentos de flexo abdução do quadril após artroplastia ou artroscopia e nos casos de luxação pós operatória de artroplastia.'
 		},
 		{
-			id: 41, name: 'Órtese Estabilizadora de Tornozelo', category: 'Órtese para Membros Inferiores', subcategory: 'Órtese estabilizadora', image: '/img/products/ortese-estabiliz-tornozelo-2.jpg', description: 'Evitar artrose, melhorando a estabilidade da articulação do tornozelo na prática esportiva. Tratamento de entorses leves. Prevenção precoce das deformidades da artrite reumatoide. Auxilia na marcha dos pacientes com lesões de dorso flexores dos pés.'
+			id: 41, name: 'Órtese Estabilizadora de Tornozelo', category: 'Órtese para Membros Inferiores', subcategory: 'Estabilizadora de tornozelo', image: '/img/products/ortese-estabiliz-tornozelo-2.jpg', description: 'Evitar artrose, melhorando a estabilidade da articulação do tornozelo na prática esportiva. Tratamento de entorses leves. Prevenção precoce das deformidades da artrite reumatoide. Auxilia na marcha dos pacientes com lesões de dorso flexores dos pés.'
 		},
 		{
 			id: 42, name: 'Órtese Noturna/Genu Valgo/Varo', category: 'Órtese para Membros Inferiores', subcategory: 'Órtese', image: '/img/products/ortese-noturna-2.jpg', description: 'Proporciona uma correção gradual de deformidades em joelho varus ou em valgus mediante esticadores de rosca dupla (cursores), que promove variação ou valgização de órteses, de acordo com a prescrição.'
@@ -199,13 +199,13 @@ const Products = () => {
 			id: 64, name: 'Palmilha Valente – Correção 5 (adulto)', category: 'Palmilhas Ortopédicas', subcategory: 'Adulto', image: '/img/products/palmilha-adulto-5-2.jpg', description: 'A Palmilha Valente – Correção 5 é indicada para apoio da abóbada planar com “U” assimétrico no calcâneo e amortecedor.'
 		},
 		{
-			id: 65, name: 'Splints Adaptações', category: 'Órtese para Membro Superior', subcategory: 'Splint', image: '/img/products/splints-adaptacoes-2.jpg', description: 'As Splints Adaptações são projetadas par auxílio do paciente em atividades da vida diária, como por exemplo, para alimentação, escrita, higiene, etc. Elas visam facilitar a independência do paciente nessas atividades.'
+			id: 65, name: 'Splints Adaptações', category: 'Órtese para Membro Superior', subcategory: 'Splints', image: '/img/products/splints-adaptacoes-2.jpg', description: 'As Splints Adaptações são projetadas par auxílio do paciente em atividades da vida diária, como por exemplo, para alimentação, escrita, higiene, etc. Elas visam facilitar a independência do paciente nessas atividades.'
 		},
 		{
-			id: 66, name: 'Splints para Estáticos – Posicionamento e Funcionais', category: 'Órtese para Membro Superior', subcategory: 'Splint', image: '/img/products/splints-elasticos-2.jpg', description: 'O Splints para Estáticos é indicado para fraturas, tenossinovite de Quervain, entorses, contusões, artroses e reeducação articular na artrite reumatoide do polegar.'
+			id: 66, name: 'Splints para Estáticos – Posicionamento e Funcionais', category: 'Órtese para Membro Superior', subcategory: 'Splints', image: '/img/products/splints-elasticos-2.jpg', description: 'O Splints para Estáticos é indicado para fraturas, tenossinovite de Quervain, entorses, contusões, artroses e reeducação articular na artrite reumatoide do polegar.'
 		},
 		{
-			id: 67, name: 'Splints/Dedos Dinâmicos/Estáticos', category: 'Órtese para Membro Superior', subcategory: 'Splint', image: '/img/products/splints-dedos-2.jpg', description: 'Splints/Dedos Dinâmicos/Estáticos são indicados para entorses, contusões, pequenas fraturas, reeducação articular na artrite reumatoide e nas artroses, nódulos de Heberden e outras afecções dos dedos das mãos.'
+			id: 67, name: 'Splints/Dedos Dinâmicos/Estáticos', category: 'Órtese para Membro Superior', subcategory: 'Splints', image: '/img/products/splints-dedos-2.jpg', description: 'Splints/Dedos Dinâmicos/Estáticos são indicados para entorses, contusões, pequenas fraturas, reeducação articular na artrite reumatoide e nas artroses, nódulos de Heberden e outras afecções dos dedos das mãos.'
 		},
 		{
 			id: 68, name: 'Suporte para Úmero', category: 'Órtese para Membro Superior', subcategory: 'Suporte', image: '/img/products/suporte-umero-2.jpg', description: 'O Suporte para Úmero é indicado para sustentação do membro superior, contusões, luxações, fraturas do úmero, bursites e sequelas de AVC.'
@@ -244,7 +244,7 @@ const Products = () => {
 			id: 79, name: 'Tutor de Sarmiento para Ulna', category: 'Órtese para Membros Superiores', subcategory: 'Tutor', image: '/img/products/tutor-s-ulna-2.jpg', description: 'Fratura medial de ulna. Pós operatório da ulna.'
 		},
 		{
-			id: 80, name: 'Walk On órtese em fibra de carbono', category: 'Órtese para Membros Superiores', subcategory: 'Mola/Walk On', image: '/img/products/walk-on-2.jpg', description: 'Projetada para auxiliar pacientes que necessitam de retorno da função de alavanca do pé (por exemplo, nos casos de fraqueza da dorsoflexão, leve fraqueza do quadríceps, paralisia peroneal ou após derrame) para obter uma marcha natural.'
+			id: 80, name: 'Walk On órtese em fibra de carbono', category: 'Órtese para Membros Superiores', subcategory: 'Mola / Walk On', image: '/img/products/walk-on-2.jpg', description: 'Projetada para auxiliar pacientes que necessitam de retorno da função de alavanca do pé (por exemplo, nos casos de fraqueza da dorsoflexão, leve fraqueza do quadríceps, paralisia peroneal ou após derrame) para obter uma marcha natural.'
 		},
 		{
 			id: 81, name: 'Calçados Ortopédicos Femininos', category: 'Calçados Ortopédicos', image: '/img/products/afo-curta-articulada-1.jpg', description: ''
@@ -256,22 +256,22 @@ const Products = () => {
 			id: 83, name: 'Calçados Ortopédicos Masculinos', category: 'Calçados Ortopédicos', image: '/img/products/foto1110g-2.jpg', description: ''
 		},
 		{
-			id: 84, name: 'Colar Cervical Bivalvado', category: 'Órtese para Cabeça e Pescoço', subcategory: 'Colar cervical', image: '/img/products/colar-cervical-bivaldo-2.jpg', description: 'O Colar Cervical Bivalvado promove a rígida imobilização da coluna cervical. É usado no tratamento de fraturas, luxações, traumatismos e cervicalgias. Também pode ser usado em pós operatório de cirurgias da coluna cervical. O Colar Cervical Bivalvado é fabricado sob medida em polipropileno.'
+			id: 84, name: 'Colar Cervical Bivalvado', category: 'Órtese para Cabeça e Pescoço', subcategory: 'Colar Cervical', image: '/img/products/colar-cervical-bivaldo-2.jpg', description: 'O Colar Cervical Bivalvado promove a rígida imobilização da coluna cervical. É usado no tratamento de fraturas, luxações, traumatismos e cervicalgias. Também pode ser usado em pós operatório de cirurgias da coluna cervical. O Colar Cervical Bivalvado é fabricado sob medida em polipropileno.'
 		},
 		{
-			id: 85, name: 'Colar Cervical com Apoio Mentoniano', category: 'Órtese para Cabeça e Pescoço', subcategory: 'Colar cervical', image: '/img/products/colar-cervical-meritoriano-2.jpg', description: 'O Colar Cervical com Apoio Mentoniano é indicado para cervicobraquialgia, cervicalgias, torcicolos, traumatismo, artroses, artrites nas subluxações e fraturas de apófises transversas ou espinhosas e outras afecções da coluna vertebral.'
+			id: 85, name: 'Colar Cervical com Apoio Mentoniano', category: 'Órtese para Cabeça e Pescoço', subcategory: 'Colar Cervical', image: '/img/products/colar-cervical-meritoriano-2.jpg', description: 'O Colar Cervical com Apoio Mentoniano é indicado para cervicobraquialgia, cervicalgias, torcicolos, traumatismo, artroses, artrites nas subluxações e fraturas de apófises transversas ou espinhosas e outras afecções da coluna vertebral.'
 		},
 		{
-			id: 86, name: 'Colar Cervical de Espuma', category: 'Órtese para Cabeça e Pescoço', subcategory: 'Colar cervical', image: '/img/products/colar-cervical-espuma-2.jpg', description: 'O Colar Cervical de Espuma é indicado para cervicalgias, torcicolos, traumatismo, artroses, artrites, estiramento muscular, estabilização da postura durante o sono.'
+			id: 86, name: 'Colar Cervical de Espuma', category: 'Órtese para Cabeça e Pescoço', subcategory: 'Colar Cervical', image: '/img/products/colar-cervical-espuma-2.jpg', description: 'O Colar Cervical de Espuma é indicado para cervicalgias, torcicolos, traumatismo, artroses, artrites, estiramento muscular, estabilização da postura durante o sono.'
 		},
 		{
-			id: 87, name: 'Colar Cervical Minerva (Forestier)', category: 'Órtese para Cabeça e Pescoço', subcategory: 'Colar cervical', image: '/img/products/colar-cervical-minerva-2.jpg', description: 'O Colar Cervical Minerva (Forestier) promove uma rígida imobilização da coluna cervical. Indicado para tratamento coadjuvantes dos traumatismos, fraturas e luxações da coluna cervical. Pós operatório de cervicalgias de C1 e C2 e nos tratamentos da lâmina vertebral com ou sem avulsões radiculares.'
+			id: 87, name: 'Colar Cervical Minerva (Forestier)', category: 'Órtese para Cabeça e Pescoço', subcategory: 'Colar Cervical', image: '/img/products/colar-cervical-minerva-2.jpg', description: 'O Colar Cervical Minerva (Forestier) promove uma rígida imobilização da coluna cervical. Indicado para tratamento coadjuvantes dos traumatismos, fraturas e luxações da coluna cervical. Pós operatório de cervicalgias de C1 e C2 e nos tratamentos da lâmina vertebral com ou sem avulsões radiculares.'
 		},
 		{
 			id: 88, name: 'Colar Cervical Philadelphia', category: 'Órteses para cabeça e pescoço', subcategory: 'Colar Cervical', image: '/img/products/colar-cervical-philadelfia-2.jpg', description: 'O Colar Cervical Philadelphia é usado no tratamento de fraturas, luxações, traumatismos e cervicalgias. Também pode ser utilizado em pós operatório de cirurgias da coluna cervical.'
 		},
 		{
-			id: 89, name: 'Colar Cervical Tipo Thomas', category: 'Órtese para Cabeça e Pescoço', subcategory: 'Colar cervical', image: '/img/products/colar-cervical-thomas-2.jpg', description: 'O Colar Cervical Tipo Thomas é indicado para cervicobraquialgia, cervicalgias, torcicolos, traumatismo craniano, artroses, artrites e afecções da coluna cervical.'
+			id: 89, name: 'Colar Cervical Tipo Thomas', category: 'Órtese para Cabeça e Pescoço', subcategory: 'Colar Cervical', image: '/img/products/colar-cervical-thomas-2.jpg', description: 'O Colar Cervical Tipo Thomas é indicado para cervicobraquialgia, cervicalgias, torcicolos, traumatismo craniano, artroses, artrites e afecções da coluna cervical.'
 		},
 		{
 			id: 90, name: 'Imobilizador de Tornozelo', category: 'Órtese para Membros Inferiores', subcategory: 'Imobilizador', image: '/img/products/imobiliz-tornozelo-2.jpg', description: 'Entorses leves do tornozelo (substituí goteira gessada). Prevenção e tratamento das deformidades da artrite reumatoide.'
@@ -292,7 +292,7 @@ const Products = () => {
 			id: 95, name: 'Prótese Mamária Triangular 2', category: 'Próteses', subcategory: 'Prótese de Mama Externa', image: '/img/products/protese-mamaria-triangular-2.jpg', description: 'Pacientes com pouca perda de tecido. Complemento mamário de silicone simetricamente adaptável, anatomicamente desenvolvido para perfeito contato com o corpo e parte interna côncava para maior conforto.'
 		},
 		{
-			id: 96, name: 'Soutien Pós Mastectomia', category: 'Próteses', subcategory: 'Próteses oculares', image: '/img/products/sutia-protese-mamaria-2.jpg', description: 'Modelo desenvolvido especialmente para mulheres submetidas a operações de mastectomia. Forrado internamente com algodão nos dois bojos.'
+			id: 96, name: 'Soutien Pós Mastectomia', category: 'Próteses', subcategory: 'Prótese de Mama Externa', image: '/img/products/sutia-protese-mamaria-2.jpg', description: 'Modelo desenvolvido especialmente para mulheres submetidas a operações de mastectomia. Forrado internamente com algodão nos dois bojos.'
 		}
 	]);
 	const [filteredProducts, setFilteredProducts] = useState(products);
@@ -318,7 +318,7 @@ const Products = () => {
 		setFilteredProducts(filtered);
 	}, [filters, products]);
 
-	const productsPerPage = window.innerWidth < 768 ? 3 : 8;
+	const productsPerPage = window.innerWidth <= 768 ? 3 : 8;
 	const paginatedProducts = filteredProducts.slice(
 		(currentPage - 1) * productsPerPage,
 		currentPage * productsPerPage
@@ -332,15 +332,20 @@ const Products = () => {
 				<p className='products-subtitle'>Clique ou toque em cada produto para saber mais.</p>
 			</div>
 			<div className="p-5">
-				<Filter onFilterChange={handleFilterChange} />
-				<ProductsGrid products={paginatedProducts} />
-				<Pagination
-					currentPage={currentPage}
-					totalItems={filteredProducts.length}
-					itemsPerPage={productsPerPage}
-					onPageChange={(page) => setCurrentPage(page)}
-				/>
+				<div className="layout-container">
+					<Filter onFilterChange={handleFilterChange} />
+					<div className="products-section">
+						<ProductsGrid products={paginatedProducts} />
+						<Pagination
+							currentPage={currentPage}
+							totalItems={filteredProducts.length}
+							itemsPerPage={productsPerPage}
+							onPageChange={(page) => setCurrentPage(page)}
+						/>
+					</div>
+				</div>
 			</div>
+
 		</main>
 	);
 };

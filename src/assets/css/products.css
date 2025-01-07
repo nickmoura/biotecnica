@@ -117,3 +117,85 @@
 	object-fit: contain;
 	/* Mantém a proporção da imagem */
 }
+
+.layout-container {
+	display: flex;
+	flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+	.layout-container {
+		flex-direction: row;
+		gap: 1rem;
+	}
+
+	.filters-area {
+		width: 250px;
+		flex-shrink: 0;
+		position: sticky;
+		/* Permite fixar na tela */
+		top: 1rem;
+		height: calc(100vh - 2rem);
+		/* Tamanho vertical */
+		overflow-y: auto;
+		background-color: transparent;
+		padding: 1rem;
+		border: 1px solid var(--primary-color);
+		border-radius: 8px;
+		scrollbar-width: thin; /* Estiliza para navegadores baseados no Gecko (Firefox) */
+		scrollbar-color: var(--secondary-color) transparent;
+	}
+
+	.products-section {
+		flex-grow: 1;
+	}
+}
+
+.category-group strong {
+	display: block;
+	margin-bottom: 0.25rem;
+	color: var(--primary-color);
+}
+
+.subcategory-list {
+	list-style: none;
+	padding-left: 1rem;
+	margin: 0;
+}
+
+.subcategory-item {
+	background: none;
+	border: none;
+	color: var(--primary-color);
+	text-align: left;
+	cursor: pointer;
+	font-size: 0.9rem;
+}
+
+.subcategory-item:hover {
+	text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+	.filters-area {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.category-group ul {
+		display: none;
+	}
+
+	.category-group strong {
+		cursor: pointer;
+	}
+
+	.category-group strong:after {
+		content: " ▾";
+	}
+
+	.category-group.open ul {
+		display: block;
+	}
+}
+

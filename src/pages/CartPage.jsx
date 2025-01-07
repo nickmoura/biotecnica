@@ -6,29 +6,34 @@ import { Link } from 'react-router-dom';
 const CartPage = ({ cart, removeFromCart, updateQuantity, clearCart }) => {
 	const handleFormSubmit = async (e) => {
 		e.preventDefault();
-
+	
+		// Cria uma string com os nomes e quantidades dos produtos, separados por linha
+		const productDetails = cart
+		  .map(item => `${item.product.name} (Quantidade: ${item.quantity})`)
+		  .join('\n');
+	
 		const formData = new FormData(e.target);
-		formData.append('products', JSON.stringify(cart));
-
+		formData.append('Produtos', productDetails); // Adiciona os produtos formatados ao FormData
+	
 		try {
-			const response = await fetch('https://formspree.io/f/seu-form-id', {
-				method: 'POST',
-				body: formData,
-				headers: {
-					Accept: 'application/json',
-				},
-			});
-
-			if (response.ok) {
-				toast.success('Pedido enviado com sucesso!');
-				clearCart();
-			} else {
-				toast.error('Ocorreu um erro ao enviar o pedido.');
-			}
+		  const response = await fetch('https://formspree.io/f/xgvvpdnz', {
+			method: 'POST',
+			body: formData,
+			headers: {
+			  Accept: 'application/json',
+			},
+		  });
+	
+		  if (response.ok) {
+			toast.success('Pedido enviado com sucesso!');
+			clearCart();
+		  } else {
+			toast.error('Ocorreu um erro ao enviar o pedido.');
+		  }
 		} catch {
-			toast.error('Erro de rede ao enviar o pedido.');
+		  toast.error('Erro de rede ao enviar o pedido.');
 		}
-	};
+	  };
 
 	return (
 		<main>
@@ -46,7 +51,7 @@ const CartPage = ({ cart, removeFromCart, updateQuantity, clearCart }) => {
 				) : (
 					<>
 						<div className="row">
-							<div className="col-md-8">
+							<div className="col-md-6">
 								<h2>Itens no Carrinho</h2>
 								<ul className="list-group">
 									{cart.map((item) => (
@@ -107,7 +112,7 @@ const CartPage = ({ cart, removeFromCart, updateQuantity, clearCart }) => {
 									))}
 								</ul>
 							</div>
-							<div className="checkout-form rounded p-3 col-md-4">
+							<div className="checkout-form rounded p-3 col-md-6">
 								<form id='checkout-form' onSubmit={handleFormSubmit} method='POST'>
 									<h2 className='pt-3 pb-3'>Finalizar Pedido</h2>
 									<div className="row pt-3 pb-3 gy-3 gx-4">
@@ -127,11 +132,11 @@ const CartPage = ({ cart, removeFromCart, updateQuantity, clearCart }) => {
 												name="WhatsApp" />
 										</div>
 										<div className="col-xl-6">
-											<input type="number" placeholder="Idade do paciente"
-												className="input-number form-control py-3 border-primary-input" name="Idade" />
+											<input type="text" placeholder="Cidade"
+												className="input-number form-control py-3 border-primary-input" name="Cidade" />
 										</div>
 										<div className="col-12">
-											<textarea className="form-control border-primary-input" name="text" id="area-text"
+											<textarea className="form-control border-primary-input" name="Comentários adicionais" id="area-text"
 												cols="30" rows="3" placeholder="Insira informações adicionais sobre seu pedido"></textarea>
 										</div>
 										<div className="col-12">

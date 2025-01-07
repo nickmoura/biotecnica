@@ -15,10 +15,12 @@
 
 .cart-product-image {
 	border-radius: 8px;
+	border: 0.125rem solid var(--primary-color);
 }
 
 .cart-product-image:hover {
 	opacity: 0.8;
+	border: 0.125rem solid var(--secondary-color);
 }
 
 .minus-one,

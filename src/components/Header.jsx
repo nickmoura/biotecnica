@@ -3,12 +3,18 @@ import { Link } from "react-router-dom";
 const Header = () => {
 
   const changeActivatedLink = function (currentElement) {
+    // Gerenciar o link ativo
     const activatedElement = document.querySelector('[data-active-link].active');
-
-    if (!activatedElement) return;
-
-    activatedElement.classList.remove('active');
+    if (activatedElement) {
+      activatedElement.classList.remove('active');
+    }
     currentElement.target.classList.add('active');
+  
+    // Fechar o menu no Bootstrap
+    const navbarCollapse = document.getElementById('navbarCollapse');
+    if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+      navbarCollapse.classList.remove('show'); // Remove a classe que mantém o menu expandido
+    }
   };
 
   return (

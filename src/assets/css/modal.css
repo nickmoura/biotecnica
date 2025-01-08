@@ -1,4 +1,4 @@
-.popup-overlay {
+.modal-overlay {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -11,7 +11,7 @@
 	z-index: 1000;
 }
 
-.popup-content {
+.modal-content {
 	background-color: var(--third-color);
 	padding: 1.25rem;
 	border: 0.125rem solid var(--primary-color);
@@ -21,8 +21,8 @@
 	position: relative;
 }
 
-.popup-content h2,
-.popup-content p {
+.modal-content h2,
+.modal-content p {
 	color: var(--primary-color);
 }
 
@@ -32,7 +32,7 @@
 	text-align: justify;
 }
 
-.popup-img {
+.modal-img {
 	border-radius: 0.75rem;
 	max-width: 100%;
 	height: auto;
@@ -41,7 +41,7 @@
 
 .close-btn {
 	color: var(--primary-color);
-	font-weight: 400;
+	font-weight: 700;
 	position: absolute;
 	top: -3rem;
 	right: -1.5rem;
@@ -49,4 +49,8 @@
 	border: none;
 	font-size: 2rem;
 	cursor: pointer;
+}
+
+.close-btn i {
+	font-style: normal;
 }

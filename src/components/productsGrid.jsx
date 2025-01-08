@@ -1,8 +1,12 @@
 import PropTypes from 'prop-types';
+import { useState } from 'react';
 import { toast } from 'react-toastify';
 import { Link } from 'react-router-dom';
+import ProductModal from './ProductModal'; // Importe o componente do modal
 
 const ProductsGrid = ({ products, addToCart }) => {
+  const [selectedProduct, setSelectedProduct] = useState(null); // Estado para controlar o produto selecionado
+
   const handleAddToCart = (product) => {
     addToCart(product); // Adiciona o produto ao carrinho
 
@@ -10,7 +14,10 @@ const ProductsGrid = ({ products, addToCart }) => {
     toast.success(
       <div>
         {product.name} foi adicionado ao carrinho!{' '}
-        <Link to="/carrinho" style={{ color: 'var(--primary-color)', textDecoration: 'none', fontWeight:'900'}}>
+        <Link
+          to="/carrinho"
+          style={{ color: 'var(--primary-color)', textDecoration: 'none', fontWeight: '900' }}
+        >
           Ver Carrinho
         </Link>
       </div>,
@@ -24,11 +31,25 @@ const ProductsGrid = ({ products, addToCart }) => {
     );
   };
 
+  const handleProductClick = (product) => {
+    console.log('Produto clicado:', product); // Log para depuração
+    setSelectedProduct(product); // Abre o modal com o produto selecionado
+  };
+
+  const closeModal = () => {
+    console.log('Fechando modal'); // Log para depuração
+    setSelectedProduct(null); // Fecha o modal
+  };
+
   return (
     <div className="row">
       {products.map((product) => (
         <div className="col-md-3 mb-4" key={product.id}>
-          <div className="card product-card">
+          <div
+            className="card product-card"
+            onClick={() => handleProductClick(product)} // Abre o modal ao clicar no card
+            style={{ cursor: 'pointer' }} // Muda o cursor para indicar que o card é clicável
+          >
             <div className="product-image-area p-3">
               <img
                 src={product.image}
@@ -40,7 +61,10 @@ const ProductsGrid = ({ products, addToCart }) => {
               <h5 className="card-title">{product.name}</h5>
               <button
                 className="btn btn-primary btn-sm add-to-cart"
-                onClick={() => handleAddToCart(product)} // Chama a função handleAddToCart
+                onClick={(e) => {
+                  e.stopPropagation(); // Impede que o clique no botão abra o modal
+                  handleAddToCart(product);
+                }}
               >
                 Adicionar ao carrinho
               </button>
@@ -48,6 +72,15 @@ const ProductsGrid = ({ products, addToCart }) => {
           </div>
         </div>
       ))}
+
+      {/* Modal do Produto */}
+      {selectedProduct && (
+        <ProductModal
+          isOpen={!!selectedProduct} // Abre o modal se houver um produto selecionado
+          product={selectedProduct} // Passa o produto selecionado para o modal
+          onClose={closeModal} // Fecha o modal
+        />
+      )}
     </div>
   );
 };

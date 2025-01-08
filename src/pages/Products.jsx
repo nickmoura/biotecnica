@@ -35,7 +35,7 @@ const Products = ({ cart, addToCart }) => { // Recebe cart e addToCart como prop
 			id: 9, name: 'Colete de Boston Feminino', category: 'Órtese para Tronco', subcategory: 'Colete', image: '/img/products/colete-boston-feminino-2.jpg', description: 'O Colete de Boston Feminino é indicado para escolioses, fraturas tóraco lombares, pós operatório de cirurgias vertebrais, controle de instabilidade do tronco em pacientes paraplégicos e com doenças neuro musculares, grave instabilidade de tronco. O Colete de Boston Feminino é desenvolvido especialmente para mulheres.'
 		},
 		{
-			id: 10, name: 'Colete de Harris', category: 'Órtese para Tronco', subcategory: 'Colete', image: '/img/products/colete-harris-2', description: 'O Colete Harris é indicado para o tratamento da coluna lombar, como hérnias de disco e todos os processos dolorosos que requerem imobilização antero-posterior e médio-lateral da região lombar.'
+			id: 10, name: 'Colete de Harris', category: 'Órtese para Tronco', subcategory: 'Colete', image: '/img/products/colete-harris-2.jpg', description: 'O Colete Harris é indicado para o tratamento da coluna lombar, como hérnias de disco e todos os processos dolorosos que requerem imobilização antero-posterior e médio-lateral da região lombar.'
 		},
 		{
 			id: 11, name: 'Colete de Jewett', category: 'Órtese para Tronco', subcategory: 'Colete', image: '/img/products/colete-jewette-2.jpg', description: 'O Colete de Jewett mantém uma hiperextensão adequada em casos de compressão por fraturas na coluna, osteoporoses, artrites vertebrais, epifisites, osteocondrites, fraturas da coluna torácica e postura cifótica.'
@@ -119,7 +119,7 @@ const Products = ({ cart, addToCart }) => { // Recebe cart e addToCart como prop
 			id: 37, name: 'Órtese Dinâmica para Punho', category: 'Órtese para Membro Superior', subcategory: 'Cinta', image: '/img/products/ortese-d-punho-2.jpg', description: 'A Órtese Dinâmica para Punho é para tração dos dedos e punhos em flexões ou extensão. Permite movimentos ativos da musculatura funcionalmente, e através dos elásticos permite movimentos passivos da musculatura paralisada. Pode ser utilizada no pós operatório de cirurgias de mão, visando a mobilização gradual da articulação.'
 		},
 		{
-			id: 38, name: 'Órtese Estabilizadora de Cotovelo', category: 'Ótese para Membro Superior', subcategory: 'Cotoveleira', image: 'ortese-esatlizadora-de-cotovelo-2.jpg', description: 'A Órtese Estabilizadora de Cotovelo é uma alternativa mais confortável e efetiva que o gesso, para melhorar significativamente a reabilitação e a consolidação. É versátil, fácil de aplicar, higiênica e com controle de amplitude do movimento.'
+			id: 38, name: 'Órtese Estabilizadora de Cotovelo', category: 'Ótese para Membro Superior', subcategory: 'Cotoveleira', image: 'img/products/ortese-estabilizadora-de-cotovelo-2.jpg', description: 'A Órtese Estabilizadora de Cotovelo é uma alternativa mais confortável e efetiva que o gesso, para melhorar significativamente a reabilitação e a consolidação. É versátil, fácil de aplicar, higiênica e com controle de amplitude do movimento.'
 		},
 		{
 			id: 39, name: 'Órtese Estabilizadora de Joelho', category: 'Órtese para Membros Inferiores', subcategory: 'Órtese estabilizadora', image: '/img/products/ortese-estbilizadora-joelho-2.jpg', description: 'A Órtese Estabilizadora de Joelho é indicada para afecções traumáticas do joelho em substituição ao aparelho gessado, pós operatório quando necessária a mobilização em flexão, também auxilia nas artropatias dos hemofílicos.'

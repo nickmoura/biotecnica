@@ -7,7 +7,7 @@ const Filter = ({ onFilterChange }) => {
     subcategory: "",
     searchTerm: "",
   });
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1024);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1025);
 
   const categories = {
     "Calçados Ortopédicos": [],
@@ -40,7 +40,7 @@ const Filter = ({ onFilterChange }) => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 1024);
+      setIsMobile(window.innerWidth <= 1025);
     };
 
     window.addEventListener("resize", handleResize);
@@ -60,8 +60,34 @@ const Filter = ({ onFilterChange }) => {
     onFilterChange(updatedFilters);
   };
 
+  const handleCategoryClick = (category) => {
+    const updatedFilters = { ...filters, category, subcategory: "" };
+    setFilters(updatedFilters);
+    onFilterChange(updatedFilters);
+  };
+
+  const handleSubcategoryClick = (subcategory) => {
+    const updatedFilters = { ...filters, subcategory };
+    setFilters(updatedFilters);
+    onFilterChange(updatedFilters);
+  };
+
+  const handleClearFilters = () => {
+    const clearedFilters = { category: "", subcategory: "", searchTerm: "" };
+    setFilters(clearedFilters);
+    onFilterChange(clearedFilters);
+  };
+
   return (
     <div className="filters-area mb-4">
+      {/* Botão de Limpar Filtro (primeiro item) */}
+      <button
+        className="clear-filters btn btn-primary btn-sm mb-3"
+        onClick={handleClearFilters}
+      >
+        Limpar Filtros
+      </button>
+
       <input
         type="text"
         name="searchTerm"
@@ -76,7 +102,7 @@ const Filter = ({ onFilterChange }) => {
         <>
           <select
             name="category"
-            className="filter-dropdown form-select"
+            className="filter-dropdown form-select mt-2"
             value={filters.category}
             onChange={handleInputChange}
           >
@@ -90,7 +116,7 @@ const Filter = ({ onFilterChange }) => {
           {filters.category && categories[filters.category].length > 0 && (
             <select
               name="subcategory"
-              className="filter-dropdown form-select"
+              className="filter-dropdown form-select mt-2"
               value={filters.subcategory}
               onChange={handleInputChange}
             >
@@ -106,19 +132,21 @@ const Filter = ({ onFilterChange }) => {
       ) : (
         // Tela maior: Exibe lista de categorias e subcategorias
         Object.keys(categories).map((category) => (
-          <div key={category} className="category-group">
-            <strong>{category}</strong>
+          <div key={category} className="category-group mt-3">
+            <strong
+              className="category-item"
+              onClick={() => handleCategoryClick(category)}
+              style={{ cursor: "pointer" }} // Torna o texto clicável
+            >
+              {category}
+            </strong>
             {categories[category].length > 0 && (
               <ul className="subcategory-list">
                 {categories[category].map((subcategory) => (
                   <li key={subcategory}>
                     <button
                       className="subcategory-item"
-                      onClick={() =>
-                        handleInputChange({
-                          target: { name: "subcategory", value: subcategory },
-                        })
-                      }
+                      onClick={() => handleSubcategoryClick(subcategory)}
                     >
                       {subcategory}
                     </button>

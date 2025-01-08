@@ -52,5 +52,23 @@
 }
 
 .close-btn i {
+	color: var(--third-color);
 	font-style: normal;
+	animation: fa-bounce 1s ease-in-out 2; /* Repete 2 vezes */
 }
+
+.close-btn i:hover {
+	color: var(--primary-color);
+}
+
+@keyframes close-btn {
+	0% {
+	  transform: scale(1);
+	}
+	50% {
+	  transform: scale(1.2);
+	}
+	100% {
+	  transform: scale(1);
+	}
+  }

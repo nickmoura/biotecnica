@@ -1,25 +1,34 @@
 * {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 :root {
-  --primary-color: #1F2C43; /* Pageant Blue */
-	--primary-color-rgb: rgba(31, 44, 67, 0.125); /* Pageant Blue com opacidade */
+	--primary-color: #1F2C43;
+	/* Pageant Blue */
+	--primary-color-rgb: rgba(31, 44, 67, 0.125);
+	/* Pageant Blue com opacidade */
 	--primary-color-rgb-alt: rgba(31, 44, 67, 0.5);
-	--secondary-color: #9BAEB5 ; /* Blue Fog */
-	--secondary-color-rgb: rgba(155, 174, 181, 0.125) ; /* Blue Fog com opacidade */
+	--secondary-color: #9BAEB5;
+	/* Blue Fog */
+	--secondary-color-rgb: rgba(155, 174, 181, 0.125);
+	/* Blue Fog com opacidade */
 	--secondary-color-rgb-alt: rgba(155, 174, 181, 0.5);
-	--third-color: #FFFFFF ; /* Bright White */
-	--fourth-color: #71757E; /* Mockingbird */
-	--fourth-color-rgb: rgb(113, 117, 126, 0.125); /* Mockingbird */
-	--fourth-color-rgb-alt: rgb(113, 117, 126, 0.50); /* Mockingbird */
+	--third-color: #FFFFFF;
+	/* Bright White */
+	--fourth-color: #71757E;
+	/* Mockingbird */
+	--fourth-color-rgb: rgb(113, 117, 126, 0.125);
+	/* Mockingbird */
+	--fourth-color-rgb-alt: rgb(113, 117, 126, 0.50);
+	/* Mockingbird */
 }
 
-html, body {
-  height: 100%;
+html,
+body {
+	height: 100%;
 }
 
 main {
-  background-color: var(--fourth-color-rgb);
+	background-color: var(--fourth-color-rgb);
 }

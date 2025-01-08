@@ -101,15 +101,22 @@
 }
 
 .add-to-cart {
+	display: flex;
+	gap: 0.75rem;
+	align-items: center;
 	background-color: var(--primary-color);
 	color: var(--third-color) !important;
 	padding: 0.5rem;
+	font-size: 1.12rem;
 	text-transform: uppercase;
 }
 
 .card-title {
 	text-align: center;
+	hyphens: auto;
 	margin: 0;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 
 .product-image-area {
@@ -134,6 +141,10 @@
 .layout-container {
 	display: flex;
 	flex-direction: column;
+}
+
+.cart-icon {
+	color: var(--third-color);
 }
 
 @media (min-width: 1025px) {

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { aplicarMascaraCelular } from "../assets/js/whatsappMask";
+import { submitContactForm, showToast } from "../assets/utils/validationForm";
 
 
 const Home = () => {
@@ -19,21 +20,21 @@ const Home = () => {
 				<div className="container-fluid about py-5">
 					<h1 className="display-3 mb-4 main-title">Inovação e Cuidado em Reabilitação</h1>
 					<div className="about-content py-5">
-							<div className="hero-text" data-wow-delay="0.4s">
+						<div className="hero-text" data-wow-delay="0.4s">
 
-								<p className="about-text"> Desde 1992, a Ortopedia Biotécnica se dedica a
-									transformar vidas por meio da reabilitação física.
-									Com mais de 30 anos de experiência, somos
-									especializados na fabricação de próteses e
-									órteses sob medida, utilizando a tecnologia para
-									atender às necessidades individuais de cada
-									paciente.</p>
-								<p className="about-text"> Além de nossa expertise em próteses e órteses,
-									oferecemos diversos de produtos ortopédicos e
-									materiais de auxílio à locomoção, como muletas,
-									andadores, cadeiras de rodas, entre outros.</p>
+							<p className="about-text"> Desde 1992, a Ortopedia Biotécnica se dedica a
+								transformar vidas por meio da reabilitação física.
+								Com mais de 30 anos de experiência, somos
+								especializados na fabricação de próteses e
+								órteses sob medida, utilizando a tecnologia para
+								atender às necessidades individuais de cada
+								paciente.</p>
+							<p className="about-text"> Além de nossa expertise em próteses e órteses,
+								oferecemos diversos de produtos ortopédicos e
+								materiais de auxílio à locomoção, como muletas,
+								andadores, cadeiras de rodas, entre outros.</p>
 
-							</div>
+						</div>
 						<div className="video-container">
 							<video controls src="/video/video.mp4"></video>
 						</div>
@@ -323,7 +324,7 @@ const Home = () => {
 							<div className="appointment-form rounded py-4 px-5">
 								<p className="contact-us fs-4 text-uppercase">Entre em contato</p>
 								<h2 className="display-5 mb-4">Agende sua avaliação!</h2>
-								<form id="contact-form" action="https://formspree.io/f/mqakkdvg" method="POST">
+								<form onSubmit={submitContactForm} id="contact-form" action="https://formspree.io/f/mqakkdvg" method="POST">
 									<div className="row gy-3 gx-4">
 										<div className="col-xl-6">
 											<input type="text" className="form-control py-3 border-primary-input"
@@ -369,7 +370,7 @@ const Home = () => {
 												cols="30" rows="2" placeholder="Escreva aqui"></textarea>
 										</div>
 										<div className="col-12">
-											<button onClick="handleSubmit()" type="submit"
+											<button onSubmit={submitContactForm} type="submit"
 												className="submit-contact btn btn-primary w-100 py-3 px-5">Enviar</button>
 											<p className="agree-lgpd fs-10">Ao clicar em &quot;enviar&quot;, você concorda com a política de privacidade disponível em nosso site. <a href="/LGPD">Clique aqui para lê-la</a>.</p>
 

@@ -22,7 +22,7 @@
 
 .products-title {
 	color: var(--primary-color);
-	text-shadow: .125rem .125rem .25rem var(--third-color);
+	text-shadow: .125rem .125rem .25rem var(--fourth-color);
 	text-align: center;
 	font-size: 3rem;
 	margin: 0;
@@ -32,7 +32,7 @@
 	margin: 0;
 	text-align: justify;
 	color: var(--primary-color);
-	text-shadow: .125rem .125rem .25rem var(--third-color);
+	text-shadow: .125rem .125rem .25rem var(--fourth-color);
 	font-weight: bold;
 	text-indent: 0.75rem;
 }

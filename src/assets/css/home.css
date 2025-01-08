@@ -103,7 +103,7 @@
 /*** Header ***/
 
 header {
-    padding: 2.5rem 0;
+    padding: 2rem 0;
     border-bottom: 0.25rem solid var(--secondary-color);
     background-color: var(--primary-color);
 }
@@ -145,6 +145,7 @@ header {
 }
 
 .about-text {
+    hyphens: auto;
     display: flex;
     text-align: justify;
     text-indent: 2rem;
@@ -336,7 +337,7 @@ main {
 
 .navbar-nav {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .navbar .nav-link {
@@ -365,7 +366,7 @@ main {
 }
 
 .navbar-expand-lg .navbar-collapse {
-    gap: 3rem !important;
+    gap: 1rem !important;
 }
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
@@ -1121,7 +1122,7 @@ footer {
     align-items: center;
     justify-content: space-around;
     margin: 0 !important;
-    padding-top: 2rem;
+    padding-top: 1.25rem;
 }
 
 .signature {
@@ -1203,8 +1204,8 @@ footer {
 
 @media screen and (min-width: 991.99px) {
     .footer {
-        padding: 0 5rem 2rem 5rem !important;
-        gap: 3rem;
+        padding: 0 2rem 2rem 2rem !important;
+        gap: 2rem;
     }
 }
 
@@ -1311,8 +1312,10 @@ footer {
 }
 
 .why-choose-text {
-    font-size: 1.165rem;
+    font-size: 1.15rem;
     color: var(--primary-color);
+    text-align: justify;
+    hyphens: auto;
 }
 
 .why-choose-item:hover .why-choose-text {
@@ -1322,7 +1325,8 @@ footer {
 .rehab-list {
     display: flex;
     flex-direction: column;
-    text-align: left !important;
+    text-align: justify !important;
+    hyphens: auto;
     gap: 0.5rem;
     padding: 0 1.25rem 0 1.25rem;
     font-size: 1.075rem;
@@ -1330,10 +1334,16 @@ footer {
     list-style-position: outside !important;
 }
 
+
+
 .team-item {
     border: 1px solid var(--primary-color);
     border-radius: 10px;
     padding: 2rem 0 0 0;
+}
+
+.team-item h5 {
+    margin: 0;
 }
 
 .copyright-area {
@@ -1366,7 +1376,9 @@ footer {
 }
 
 .special-text {
+    text-indent: 1.5rem;
     text-align: justify;
+    hyphens: auto;
     text-shadow: none;
 }
 

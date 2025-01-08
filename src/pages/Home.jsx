@@ -62,15 +62,15 @@ const Home = () => {
 						</div>
 						<div className="row g-4 justify-content-center">
 							<div className="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
-								<div className="why-choose-item row-cols-1 feature-item p-4">
+								<div className="why-choose-item row-cols-1 feature-item pt-1 p-4">
 									<div className="col-12">
 										<div className="feature-icon mb-4">
-											<div className="p-3 d-inline-flex rounded why-choose-icon-area">
+											<div className="p-3 pb-1 d-inline-flex rounded why-choose-icon-area">
 												<i className="why-choose-icon fas fa-solid fa-user-nurse fa-4x"></i>
 											</div>
 										</div>
 										<div className="feature-content d-flex flex-column">
-											<h5 className="why-choose-title mb-4">Atendimento personalizado</h5>
+											<h5 className="why-choose-title mb-2">Atendimento personalizado</h5>
 											<p className="why-choose-text mb-0">Na Biotécnica, oferecemos atendimento personalizado
 												focado nas suas
 												necessidades, garantindo próteses e órteses feitas sob medida.
@@ -80,15 +80,15 @@ const Home = () => {
 								</div>
 							</div>
 							<div className="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-								<div className="why-choose-item row-cols-1 feature-item p-4">
+								<div className="why-choose-item row-cols-1 feature-item pt-1 p-4">
 									<div className="col-12">
 										<div className="feature-icon mb-4">
-											<div className="p-3 d-inline-flex rounded">
+											<div className="p-3  pb-1 d-inline-flex rounded">
 												<i className="why-choose-icon fas fa-solid fa-stopwatch fa-4x"></i>
 											</div>
 										</div>
 										<div className="feature-content d-flex flex-column">
-											<h5 className="why-choose-title mb-4">Agilidade</h5>
+											<h5 className="why-choose-title mb-2">Agilidade</h5>
 											<p className="why-choose-text mb-0">A Biotécnica é reconhecida por sua celeridade no
 												processo de
 												fabricação de próteses, garantindo rapidez sem comprometer a qualidade.</p>
@@ -97,15 +97,15 @@ const Home = () => {
 								</div>
 							</div>
 							<div className="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
-								<div className="why-choose-item row-cols-1 feature-item p-4">
+								<div className="why-choose-item row-cols-1 feature-item pt-1 p-4">
 									<div className="col-12">
 										<div className="feature-icon mb-4">
-											<div className="p-3 d-inline-flex rounded">
+											<div className="p-3 pb-1 d-inline-flex rounded">
 												<i className="why-choose-icon fas fa-solid fa-dollar-sign fa-4x"></i>
 											</div>
 										</div>
 										<div className="feature-content d-flex flex-column">
-											<h5 className="why-choose-title mb-4">O melhor custo-benefício</h5>
+											<h5 className="why-choose-title mb-2">O melhor custo-benefício</h5>
 											<p className="why-choose-text mb-0">As soluções de mobilidade da Biotécnica são
 												acessíveis e
 												reconhecidas reconhecidas por seu alto padrão, unindo qualidade e preço justo.
@@ -115,15 +115,15 @@ const Home = () => {
 								</div>
 							</div>
 							<div className="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-								<div className="why-choose-item row-cols-1 feature-item p-4">
+								<div className="why-choose-item row-cols-1 feature-item pt-1 p-4">
 									<div className="col-12">
 										<div className="feature-icon mb-4">
-											<div className="p-3 d-inline-flex rounded">
+											<div className="p-3 pb-1 d-inline-flex rounded">
 												<i className="why-choose-icon fas fa-solid fa-star fa-4x"></i>
 											</div>
 										</div>
 										<div className="feature-content d-flex flex-column">
-											<h5 className="why-choose-title mb-4">Exclusividade</h5>
+											<h5 className="why-choose-title mb-2">Exclusividade</h5>
 											<p className="why-choose-text mb-0">A Biotécnica sabe que cada um de nós possui
 												características
 												pessoais, logo, nossas próteses unem personalização e
@@ -151,10 +151,10 @@ const Home = () => {
 								<div className="icon-container team-img h-100">
 									<i className="fas fa-regular fa-star fa-4x process-icon"></i>
 								</div>
-								<div className="team-content text-center p-4">
+								<div className="team-content text-center p-4 pt-5 pb-5">
 									<h5>Avaliação</h5>
 									<ul className="rehab-list mb-0">
-										<li className="rehab-list-item">Conhecer o paciente</li>
+										<li className="rehab-list-item">Conhecer e compreender o paciente e suas necessidades</li>
 										<li className="rehab-list-item">Avaliar suas características físicas e suas possibilidades
 										</li>
 										<li className="rehab-list-item">Propor um plano de reabilitação</li>

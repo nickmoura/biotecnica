@@ -35,9 +35,20 @@ const Home = () => {
 								andadores, cadeiras de rodas, entre outros.</p>
 
 						</div>
-						<div className="video-container">
-							<video controls src="/video/video.mp4"></video>
+						<div className="container my-4">
+							<div className="row justify-content-center">
+								<div className="col-12 col-md-10 col-lg-8">
+									<div className="ratio ratio-16x9">
+										<iframe
+											src="https://player.vimeo.com/video/1045109159?h=fd984eab8d"
+											title="vimeo-player"
+											allowfullscreen>
+										</iframe>
+									</div>
+								</div>
+							</div>
 						</div>
+
 					</div>
 				</div>
 			</section>

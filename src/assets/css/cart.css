@@ -13,6 +13,27 @@
 	font-weight: 700;
 }
 
+.cart-container {
+	gap: 1rem;
+}
+
+.clear-cart {
+	display: flex;
+	margin: auto;
+	margin-top: 0.5rem;
+	align-items: center;
+	justify-content: space-around;
+	gap: 1rem;
+	font-size: 1.125rem;
+	padding: 1rem;
+	background-color: var(--primary-color);
+	color: var(--third-color) !important;
+}
+
+.clear-cart i {
+	color: var(--third-color) ;
+}
+
 .cart-product-image {
 	border-radius: 8px;
 	border: 0.125rem solid var(--primary-color);
@@ -28,13 +49,29 @@
 	background-color: var(--third-color);
 	border-color: var(--primary-color);
 	color: var(--primary-color);
+	border-radius: 0.5rem;
+	font-size: 1.5rem;
 }
 
 .minus-one:hover,
 .plus-one:hover {
 	background-color: var(--primary-color);
-	border-color: var(--secondary-color);
 	color: var(--third-color);
+	border-color: var(--fourth-color);
+}
+
+.quantity {
+	font-size: 1.5rem;
+	border-radius: 0.5rem;
+}
+
+.quantity:focus {
+	border: 0.124rem solid var(--primary-color);
+}
+
+.minus-one:focus,
+.plus-one:focus {
+	box-shadow: 0 0 0 .25rem var(--fourth-color-rgb-alt);
 }
 
 /* Remove as setas de aumentar/diminuir do input do tipo number */
@@ -50,13 +87,15 @@ input.quantity[type="number"] {
 }
 
 .btn-danger {
+	font-size: 1.75rem;
 	background-color: var(--third-color);
 	border-color: var(--primary-color);
 }
 
 .btn-danger:hover {
 	background-color: var(--primary-color);
-	border-color: var(--secondary-color);
+	border: none;
+	box-shadow: 0 0 0 .25rem var(--fourth-color-rgb-alt);
 }
 
 .btn-danger:hover i {
@@ -90,4 +129,14 @@ input.quantity[type="number"] {
 .submit-cart.btn.btn-primary:hover {
     box-shadow: inset 600px 0 0 0 var(--primary-color) !important;
     color: var(--third-color) !important;
+}
+
+@media (min-width: 426px) {
+	.clear-cart {
+		margin: 1rem auto 1rem 1rem;
+	}
+
+	.cart-container {
+		gap: 0;
+	}
 }

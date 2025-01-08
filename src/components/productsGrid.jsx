@@ -65,7 +65,7 @@ const ProductsGrid = ({ products, addToCart }) => {
                   e.stopPropagation(); // Impede que o clique no botão abra o modal
                   handleAddToCart(product);
                 }}
-              >
+              > <i className="cart-icon fa-solid fa-cart-plus"></i>
                 Adicionar ao carrinho
               </button>
             </div>

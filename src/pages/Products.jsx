@@ -330,8 +330,7 @@ const Products = ({ cart, addToCart }) => { // Recebe cart e addToCart como prop
 	  <main>
 		<div className="products-hero py-5 px-4">
 		  <h1 className="products-title">Produtos</h1>
-		  <p className='products-subtitle'>Os produtos da Ortopedia Biotécnica oferecem soluções de alta qualidade para a reabilitação e o conforto dos clientes.</p>
-		  <p className='products-subtitle'>Clique ou toque em cada produto para saber mais.</p>
+		  <p className='products-subtitle'>Nossos produtos oferecem soluções de alta qualidade para a reabilitação e o conforto dos clientes. Clique ou toque em cada produto para saber mais.</p>
 		</div>
 		<div className="p-5">
 		  <div className="layout-container">

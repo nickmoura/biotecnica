@@ -20,7 +20,6 @@
 
 .lgpd-title {
 	color: var(--primary-color);
-	text-shadow: .0625rem .0625rem .125rem var(--third-color);
 	text-align: center;
 	font-size: 3rem;
 	margin: 0;
@@ -30,9 +29,19 @@
 	margin: 0;
 	text-align: justify;
 	color: var(--primary-color);
-	text-shadow: .0625rem .0625rem .125rem var(--third-color);
 	font-weight: bold;
+	font-size: 0.875rem;
 	text-indent: 0.75rem;
+}
+
+@media (min-width: 1300px) {
+	.lgpd-title {
+		font-size: 4rem;
+	}
+
+	.lgpd-subtitle {
+		font-size: 1.5rem;
+	}
 }
 
 .lgpd-text {

@@ -152,8 +152,10 @@ const Home = () => {
 								<div className="icon-container team-img h-100">
 									<i className="fas fa-regular fa-star fa-4x process-icon"></i>
 								</div>
-								<div className="team-content text-center p-4 pt-5 pb-5">
-									<h5>Avaliação</h5>
+								<div className="rehab-title-area">
+									<h5 className="rehab-title mt-2">Avaliação</h5>
+								</div>
+								<div className="team-content text-center p-4 pt-2 pb-2">
 									<ul className="rehab-list mb-0">
 										<li className="rehab-list-item">Conhecer e compreender o paciente e suas necessidades</li>
 										<li className="rehab-list-item">Avaliar suas características físicas e suas possibilidades
@@ -168,8 +170,10 @@ const Home = () => {
 								<div className="icon-container team-img h-100">
 									<i className="fas fa-regular fa-hand-point-right fa-4x process-icon"></i>
 								</div>
-								<div className="team-content text-center p-4">
-									<h5>Indicação</h5>
+								<div className="rehab-title-area">
+									<h5 className="rehab-title mt-2">Indicação</h5>
+								</div>
+								<div className="team-content text-center p-4 pt-2 pb-2">
 									<ul className="rehab-list mb-0">
 										<li className="rehab-list-item">Propor os melhores componentes para a prótese</li>
 										<li className="rehab-list-item">Confecção do molde e medidas</li>
@@ -183,8 +187,11 @@ const Home = () => {
 								<div className="icon-container team-img h-100">
 									<i className="fas fa-solid fa-rocket fa-4x process-icon"></i>
 								</div>
+								<div className="rehab-title-area">
+									<h5 className="rehab-title mt-2">Treinamento</h5>
+
+								</div>
 								<div className="team-content text-center p-4">
-									<h5>Treinamento</h5>
 									<ul className="rehab-list mb-0">
 										<li className="rehab-list-item">Alinhamento da prótese</li>
 										<li className="rehab-list-item">Início do treino de marcha</li>
@@ -198,8 +205,10 @@ const Home = () => {
 								<div className="icon-container team-img h-100">
 									<i className="fas fa-solid fa-truck fa-4x process-icon"></i>
 								</div>
+								<div className="rehab-title-area">
+									<h5 className="rehab-title mt-2">Entrega</h5>
+								</div>
 								<div className="team-content text-center p-4">
-									<h5>Entrega</h5>
 									<ul className="rehab-list mb-0">
 										<li className="rehab-list-item">Realizar a confecção do encaixe definitivo</li>
 										<li className="rehab-list-item">Acompanhar o paciente</li>

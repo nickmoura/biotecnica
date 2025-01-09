@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { aplicarMascaraCelular } from "../assets/js/whatsappMask";
-import { submitContactForm, showToast } from "../assets/utils/validationForm";
-
+import { submitContactForm } from "../assets/utils/validationForm";
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 const Home = () => {
 
@@ -211,86 +212,6 @@ const Home = () => {
 				</div>
 			</section>
 			{/*  Process End */}
-			{/*  Testimonial start
-			<div className="container-fluid testimonial py-5 wow zoomInDown" data-wow-delay="0.1s">
-				<div className="container py-5">
-					<div className="section-title mb-5">
-						<div className="sub-style">
-							<h4 className="sub-title text-white px-3 mb-0">Testimonial</h4>
-						</div>
-						<h1 className="display-3 mb-4">What Clients are Say</h1>
-					</div>
-					<div className="testimonial-carousel owl-carousel">
-						<div className="testimonial-item">
-							<div className="testimonial-inner p-5">
-								<div className="testimonial-inner-img mb-4">
-									<img src="img/testimonial-img.jpg" className="img-fluid rounded-circle" alt="">
-								</div>
-								<p className="text-white fs-7">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
-									nemo facilis tempora esse explicabo sed! Dignissimos quia ullam pariatur blanditiis sed
-									voluptatum. Totam aut quidem laudantium tempora. Minima, saepe earum!
-								</p>
-								<div className="text-center">
-									<h5 className="mb-2">John Abraham</h5>
-									<p className="mb-2 text-white-50">New York, USA</p>
-									<div className="d-flex justify-content-center">
-										<i className="fas fa-star text-secondary"></i>
-										<i className="fas fa-star text-secondary"></i>
-										<i className="fas fa-star text-secondary"></i>
-										<i className="fas fa-star text-secondary"></i>
-										<i className="fas fa-star text-secondary"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div className="testimonial-item">
-							<div className="testimonial-inner p-5">
-								<div className="testimonial-inner-img mb-4">
-									<img src="img/testimonial-img.jpg" className="img-fluid rounded-circle" alt="">
-								</div>
-								<p className="text-white fs-7">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
-									nemo facilis tempora esse explicabo sed! Dignissimos quia ullam pariatur blanditiis sed
-									voluptatum. Totam aut quidem laudantium tempora. Minima, saepe earum!
-								</p>
-								<div className="text-center">
-									<h5 className="mb-2">John Abraham</h5>
-									<p className="mb-2 text-white-50">New York, USA</p>
-									<div className="d-flex justify-content-center">
-										<i className="fas fa-star text-secondary"></i>
-										<i className="fas fa-star text-secondary"></i>
-										<i className="fas fa-star text-secondary"></i>
-										<i className="fas fa-star text-secondary"></i>
-										<i className="fas fa-star text-secondary"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div className="testimonial-item">
-							<div className="testimonial-inner p-5">
-								<div className="testimonial-inner-img mb-4">
-									<img src="img/testimonial-img.jpg" className="img-fluid rounded-circle" alt="">
-								</div>
-								<p className="text-white fs-7">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
-									nemo facilis tempora esse explicabo sed! Dignissimos quia ullam pariatur blanditiis sed
-									voluptatum. Totam aut quidem laudantium tempora. Minima, saepe earum!
-								</p>
-								<div className="text-center">
-									<h5 className="mb-2">John Abraham</h5>
-									<p className="mb-2 text-white-50">New York, USA</p>
-									<div className="d-flex justify-content-center">
-										<i className="fas fa-star text-secondary"></i>
-										<i className="fas fa-star text-secondary"></i>
-										<i className="fas fa-star text-secondary"></i>
-										<i className="fas fa-star text-secondary"></i>
-										<i className="fas fa-star text-secondary"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-         Testimonial End */}
 			{/* Book Appointment Start */}
 			<section id="special" className="container-fluid appointment py-5">
 				<div className="container py-5">
@@ -381,7 +302,7 @@ const Home = () => {
 												cols="30" rows="2" placeholder="Escreva aqui"></textarea>
 										</div>
 										<div className="col-12">
-											<button onSubmit={submitContactForm} type="submit"
+											<button type="submit"
 												className="submit-contact btn btn-primary w-100 py-3 px-5">Enviar</button>
 											<p className="agree-lgpd fs-10">Ao clicar em &quot;enviar&quot;, você concorda com a política de privacidade disponível em nosso site. <a href="/LGPD">Clique aqui para lê-la</a>.</p>
 
@@ -394,7 +315,7 @@ const Home = () => {
 				</div>
 
 			</section>
-			{/* Book Appointment Start */}
+			<ToastContainer />
 		</main>
 	)
 };

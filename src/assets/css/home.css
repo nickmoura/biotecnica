@@ -110,6 +110,10 @@ header {
 
 @media (min-width: 1320px) {
     .header-cart {
+        order: 2;
+    }
+
+    .navbar-collapse {
         order: 1;
     }
     
@@ -1165,6 +1169,16 @@ footer {
 .signature p a {
     text-decoration: none;
     color: inherit;
+}
+
+@media (max-width: 407px) {
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar-collapse {
+        flex-wrap: nowrap;
+    }
 }
 
 @media screen and (max-width: 1320px) {

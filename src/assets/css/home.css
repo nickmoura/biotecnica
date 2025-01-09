@@ -108,6 +108,13 @@ header {
     background-color: var(--primary-color);
 }
 
+@media (min-width: 1320px) {
+    .header-cart {
+        order: 1;
+    }
+    
+}
+
 /*** Section Title Start ***/
 
 .hero-text {
@@ -161,7 +168,7 @@ iframe {
 }
 
 iframe:hover {
-    border-color:var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 @media (min-width: 768px) {
@@ -330,7 +337,7 @@ main {
 
 .navbar {
     display: flex;
-    gap: 3rem;
+    gap: 1rem;
     height: 100%;
     padding: .5rem 1rem;
 }
@@ -349,6 +356,12 @@ main {
 }
 
 @media (min-width: 1700px) {
+    header {
+        padding: 3rem !important;
+    }
+    .navbar-nav {
+        margin-left: 0 !important;
+    }
     .navbar .nav-link {
         font-size: 1.75rem !important;
     }
@@ -366,6 +379,7 @@ main {
 }
 
 .navbar-expand-lg .navbar-collapse {
+    justify-content: space-around !important;
     gap: 1rem !important;
 }
 
@@ -467,7 +481,7 @@ main {
         background: var(--bs-light) !important;
     }
 
-    .navbar-light .navbar-nav .nav-link::before {
+    .navbar-light .navbar-nav .nav-link::before, .header-cart::before {
         position: absolute;
         content: "";
         width: 0;
@@ -479,10 +493,23 @@ main {
     }
 
     .navbar-light .navbar-nav .nav-link:hover::before,
-    .navbar-light .navbar-nav .nav-link.active::before {
+    .navbar-light .navbar-nav .nav-link.active::before,
+    .header-cart:hover::before,
+    .header-cart.active::before {
+        content: ""; /* Adicionado */
+        display: block; /* Adicionado */
+        position: absolute; /* Adicionado */
         width: calc(100% - 2px);
         left: 1%;
+        bottom: 0; /* Ajuste conforme necessário */
         background-color: var(--third-color) !important;
+        height: 2px; /* Ajuste conforme necessário */
+    }
+    
+    /* Certifique-se de que os elementos pai tenham position: relative */
+    .navbar-light .navbar-nav .nav-link,
+    .header-cart {
+        position: relative;
     }
 
     .navbar-light .navbar-nav .nav-link.nav-contact::before {

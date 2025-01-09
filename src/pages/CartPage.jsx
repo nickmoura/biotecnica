@@ -15,47 +15,47 @@ const CartPage = ({ cart, removeFromCart, updateQuantity, clearCart }) => {
         setCelular(valorFormatado);
     };
 
-	const handleSubmitCombined = async (event) => {
-		event.preventDefault();
-	
-		// Valida o formulário
-		if (!validateCheckoutForm()) return;
-	
-		const form = event.target;
-		const formData = new FormData(form);
-	
-		// Adiciona os produtos formatados ao FormData na ordem correta
-		const productDetails = cart
-			.map((item) => `${item.product.name} (Quantidade: ${item.quantity})`)
-			.join('\n');
-		formData.append('Produtos', productDetails);
-	
-		try {
-			const response = await fetch(form.action, {
-				method: 'POST',
-				body: formData,
-				headers: {
-					Accept: 'application/json',
-				},
-			});
-	
-			if (response.ok) {
-				toast.success('Pedido enviado com sucesso!');
-				clearCart(); // Limpa o carrinho
-				form.reset(); // Reseta o formulário
-			} else {
-				toast.error('Ocorreu um erro ao enviar o pedido.');
-			}
-		} catch (error) {
-			console.error("Erro ao enviar o formulário:", error);
-			toast.error('Erro de rede ao enviar o pedido.');
-		}
-	};
+    const handleSubmitCombined = async (event) => {
+        event.preventDefault();
+
+        // Valida o formulário
+        if (!validateCheckoutForm()) return;
+
+        const form = event.target;
+        const formData = new FormData(form);
+
+        // Adiciona os produtos formatados ao FormData na ordem correta
+        const productDetails = cart
+            .map((item) => `${item.product.name} (Quantidade: ${item.quantity})`)
+            .join('\n');
+        formData.append('Produtos', productDetails);
+
+        try {
+            const response = await fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    Accept: 'application/json',
+                },
+            });
+
+            if (response.ok) {
+                toast.success('Pedido enviado com sucesso!');
+                clearCart(); // Limpa o carrinho
+                form.reset(); // Reseta o formulário
+            } else {
+                toast.error('Ocorreu um erro ao enviar o pedido.');
+            }
+        } catch (error) {
+            console.error("Erro ao enviar o formulário:", error);
+            toast.error('Erro de rede ao enviar o pedido.');
+        }
+    };
 
     return (
         <main>
             <section className="cart-area p-5">
-                <h1 className="mb-4">Carrinho de Compras</h1>
+                <h1 className="text-center">Carrinho de Compras</h1>
                 {cart.length === 0 ? (
                     <div className="empty-cart alert alert-info">
                         <p className="empty-cart-text">
@@ -67,18 +67,19 @@ const CartPage = ({ cart, removeFromCart, updateQuantity, clearCart }) => {
                     </div>
                 ) : (
                     <>
-                        <div className="cart-container row">
+                        <div className="cart-container row mt-5">
                             <div className="col-md-6">
-                                <h2>Itens no Carrinho</h2>
-                                <ul className="list-group">
-                                    {/* Botão de Limpar Carrinho */}
-                                    <button
-                                        className="clear-cart btn-primary btn btn-sm mb-3"
-                                        onClick={clearCart}
-                                    >
-                                        <i className='fa-solid fa-x'></i>
-                                        Limpar Carrinho
-                                    </button>
+                                <h2 className='mb-5 text-center'>Itens no Carrinho</h2>
+                                {/* Botão de Limpar Carrinho */}
+                                <button
+                                    className="clear-cart btn-primary btn btn-sm mb-3"
+                                    onClick={clearCart}
+                                >
+                                    <i className='fa-solid fa-x'></i>
+                                    Limpar Carrinho
+                                </button>
+                                <ul className="list-group m-0">
+
                                     {cart.map((item) => (
                                         <li key={item.product.id} className="list-group-item">
                                             <div className="d-flex justify-content-between align-items-center">

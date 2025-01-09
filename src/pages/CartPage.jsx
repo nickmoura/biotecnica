@@ -55,7 +55,7 @@ const CartPage = ({ cart, removeFromCart, updateQuantity, clearCart }) => {
     return (
         <main>
             <section className="cart-area p-5">
-                <h1 className="mb-4">Carrinho de Compras</h1>
+                <h1 className="text-center">Carrinho de Compras</h1>
                 {cart.length === 0 ? (
                     <div className="empty-cart alert alert-info">
                         <p className="empty-cart-text">
@@ -67,9 +67,9 @@ const CartPage = ({ cart, removeFromCart, updateQuantity, clearCart }) => {
                     </div>
                 ) : (
                     <>
-                        <div className="cart-container row">
+                        <div className="cart-container row mt-5">
                             <div className="col-md-6">
-                                <h2>Itens no Carrinho</h2>
+                                <h2 className='mb-5 text-center'>Itens no Carrinho</h2>
                                 {/* Botão de Limpar Carrinho */}
                                 <button
                                     className="clear-cart btn-primary btn btn-sm mb-3"
@@ -78,7 +78,7 @@ const CartPage = ({ cart, removeFromCart, updateQuantity, clearCart }) => {
                                     <i className='fa-solid fa-x'></i>
                                     Limpar Carrinho
                                 </button>
-                                <ul className="list-group">
+                                <ul className="list-group m-0">
 
                                     {cart.map((item) => (
                                         <li key={item.product.id} className="list-group-item">

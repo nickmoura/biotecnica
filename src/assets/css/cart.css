@@ -31,7 +31,7 @@
 }
 
 .clear-cart i {
-	color: var(--third-color) ;
+	color: var(--third-color);
 }
 
 .cart-product-image {
@@ -50,7 +50,11 @@
 	border-color: var(--primary-color);
 	color: var(--primary-color);
 	border-radius: 0.5rem;
-	font-size: 1.5rem;
+
+}
+
+.quantity {
+	border-radius: 0.5rem;
 }
 
 .minus-one:hover,
@@ -60,11 +64,6 @@
 	border-color: var(--fourth-color);
 }
 
-.quantity {
-	font-size: 1.5rem;
-	border-radius: 0.5rem;
-}
-
 .quantity:focus {
 	border: 0.124rem solid var(--primary-color);
 }
@@ -72,6 +71,17 @@
 .minus-one:focus,
 .plus-one:focus {
 	box-shadow: 0 0 0 .25rem var(--fourth-color-rgb-alt);
+}
+
+@media (min-width:426px) {
+
+	.minus-one,
+	.plus-one,
+	.quantity {
+		font-size: 1.5rem;
+	}
+
+
 }
 
 /* Remove as setas de aumentar/diminuir do input do tipo number */
@@ -87,7 +97,7 @@ input.quantity[type="number"] {
 }
 
 .btn-danger {
-	font-size: 1.75rem;
+	font-size: 1rem;
 	background-color: var(--third-color);
 	border-color: var(--primary-color);
 }
@@ -100,6 +110,15 @@ input.quantity[type="number"] {
 
 .btn-danger:hover i {
 	color: var(--third-color);
+}
+
+@media (min-width: 426px) {
+	.btn-danger {
+		font-size: 1.75rem;
+		background-color: var(--third-color);
+		border-color: var(--primary-color);
+	}
+
 }
 
 .checkout-form {
@@ -122,18 +141,18 @@ input.quantity[type="number"] {
 }
 
 .submit-cart {
-    box-shadow: inset 0 0 0 0 var(--fourth-color) !important;
+	box-shadow: inset 0 0 0 0 var(--fourth-color) !important;
 	text-transform: uppercase;
 }
 
 .submit-cart.btn.btn-primary:hover {
-    box-shadow: inset 600px 0 0 0 var(--primary-color) !important;
-    color: var(--third-color) !important;
+	box-shadow: inset 600px 0 0 0 var(--primary-color) !important;
+	color: var(--third-color) !important;
 }
 
 @media (min-width: 426px) {
 	.clear-cart {
-		margin: 1rem auto 1rem 1rem;
+		margin: 1rem auto 1rem 0;
 	}
 
 	.cart-container {

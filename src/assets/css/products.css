@@ -22,19 +22,35 @@
 
 .products-title {
 	color: var(--primary-color);
-	text-shadow: .125rem .125rem .25rem var(--fourth-color);
 	text-align: center;
 	font-size: 3rem;
 	margin: 0;
+	padding-bottom: 1rem;
 }
 
 .products-subtitle {
 	margin: 0;
 	text-align: justify;
 	color: var(--primary-color);
-	text-shadow: .125rem .125rem .25rem var(--fourth-color);
 	font-weight: bold;
 	text-indent: 0.75rem;
+	font-size: 0.875rem;
+}
+
+@media (min-width: 1024px) and (max-width: 1299px) {
+	.products-subtitle {
+		font-size: 1rem;
+	}
+}
+
+@media (min-width: 1300px) {
+	.products-title {
+		font-size: 4rem;
+	}
+
+	.products-subtitle {
+		font-size: 1.5rem;
+	}
 }
 
 .clear-filters {

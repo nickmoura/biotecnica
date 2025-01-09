@@ -28,6 +28,9 @@ const Header = () => {
         <Link to="/" className="navbar-brand p-0">
           <img src="./img/biotecnica-logo-branco-cortado.png" alt="Logo" style={{ height: '50px' }} />
         </Link>
+        <Link to="/carrinho" className="nav-item nav-link header-cart" data-active-link style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+          <i className="fa-solid fa-cart-shopping" style={{ fontSize: '2rem', color: 'var(--third-color)' }}></i>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -36,42 +39,40 @@ const Header = () => {
         >
           <span className="fa fa-bars" style={{ color: "var(--third-color)" }}></span>
         </button>
-        <Link to="/carrinho" className="nav-item nav-link header-cart" data-active-link style={{display:'flex',gap:'0.5rem', alignItems:'center'}}>
-            <i className="fa-solid fa-cart-shopping" style={{ fontSize: '2rem', color: 'var(--third-color)' }}></i>
-          </Link>
 
-<div className="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-  <div className="navbar-nav ms-auto">
-    <Link to="/" className="nav-item nav-link" data-active-link>
-      Início
-    </Link>
-    <a href="/#about" className="nav-item nav-link" data-active-link>
-      Sobre
-    </a>
-    <a href="/#why-choose" className="nav-item nav-link" data-active-link>
-      Por que a Biotécnica?
-    </a>
-    <a href="/#rehab" className="nav-item nav-link" data-active-link>
-      Processo
-    </a>
-    <a href="/#special" className="nav-item nav-link" data-active-link>
-      Especialidades
-    </a>
-    <Link to="/dados" className="nav-item nav-link" data-active-link>
-      Dados
-    </Link>
-    <Link to="/produtos" className="nav-item nav-link" data-active-link>
-      Produtos
-    </Link>
 
-  </div>
+        <div className="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+          <div className="navbar-nav ms-auto">
+            <Link to="/" className="nav-item nav-link" data-active-link>
+              Início
+            </Link>
+            <a href="/#about" className="nav-item nav-link" data-active-link>
+              Sobre
+            </a>
+            <a href="/#why-choose" className="nav-item nav-link" data-active-link>
+              Por que a Biotécnica?
+            </a>
+            <a href="/#rehab" className="nav-item nav-link" data-active-link>
+              Processo
+            </a>
+            <a href="/#special" className="nav-item nav-link" data-active-link>
+              Especialidades
+            </a>
+            <Link to="/dados" className="nav-item nav-link" data-active-link>
+              Dados
+            </Link>
+            <Link to="/produtos" className="nav-item nav-link" data-active-link>
+              Produtos
+            </Link>
 
-  <a href="https://api.whatsapp.com/send?phone=5515996387470"
-    className="navbar-schedule btn btn-primary rounded-pill py-2 px-4 flex-wrap flex-sm-shrink-0"
-  >
-    Agendar avaliação
-  </a>
-</div>
+          </div>
+
+          <a href="https://api.whatsapp.com/send?phone=5515996387470"
+            className="navbar-schedule btn btn-primary rounded-pill py-2 px-4 flex-wrap flex-sm-shrink-0"
+          >
+            Agendar avaliação
+          </a>
+        </div>
       </nav>
     </header>
   );

@@ -59,7 +59,7 @@ const Home = () => {
 				<div className="container-fluid feature py-5">
 					<div className="container py-5">
 						<div className="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">
-							<h2 className="display-3 mb-4 main-title">Por que escolher a Biotécnica?</h2>
+							<h1 className="display-3 mb-4 main-title">Por que escolher a Biotécnica?</h1>
 						</div>
 						<div className="row g-4 justify-content-center">
 							<div className="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
@@ -143,7 +143,7 @@ const Home = () => {
 			<section id="rehab" className="container-fluid team py-5">
 				<div className="container py-5">
 					<div className="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">
-						<h2 className="display-3 mb-4 main-title">Processo de reabilitação Biotécnica</h2>
+						<h1 className="display-3 mb-4 main-title">Processo de reabilitação Biotécnica</h1>
 						<p className="text-discover mb-0">Descubra nosso processo e o que ele tem de especial.</p>
 					</div>
 					<div className="row g-4 justify-content-center">
@@ -227,7 +227,7 @@ const Home = () => {
 					<div className="special-area row g-5 align-items-center">
 						<div className="col-lg-6 wow fadeInLeft" data-wow-delay="0.2">
 							<div className="section-title text-start">
-								<h2 className="main-title display-4 mb-4">Especialidades</h2>
+								<h1 className="display-4 mb-4">Especialidades</h1>
 								<div className="row g-4">
 									<div className="col-sm-6">
 										<div className="d-flex flex-column h-100">

@@ -33,7 +33,7 @@ const Footer = () => {
 				</div>
 			</div>
 			<div className="signature g-5">
-				<p>© 2024 Ortopedia Biotécnica. Todos os direitos reservados.</p>
+				<p>© {new Date().getFullYear()} Biotecnica Próteses e Órteses LTDA - CNPJ 50.023.129/0001-93. Todos os direitos reservados.</p>
 				<p>Criado por <a href="https://www.nickmoura.dev">Nick Moura</a></p>
 			</div>
 		</footer>

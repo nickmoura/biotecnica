@@ -227,7 +227,7 @@ const Home = () => {
 					<div className="special-area row g-5 align-items-center">
 						<div className="col-lg-6 wow fadeInLeft" data-wow-delay="0.2">
 							<div className="section-title text-start">
-								<h2 className="display-4 mb-4">Especialidades</h2>
+								<h2 className="main-title display-4 mb-4">Especialidades</h2>
 								<div className="row g-4">
 									<div className="col-sm-6">
 										<div className="d-flex flex-column h-100">

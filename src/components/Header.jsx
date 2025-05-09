@@ -23,8 +23,8 @@ const Header = () => {
   }, [location]); // Reexecuta sempre que a URL mudar.
 
   return (
-    <header className="container-fluid position-relative p-0">
-      <nav className="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+    <header className="container-fluid position-relative">
+      <nav className="navbar navbar-expand-lg navbar-light">
         <Link to="/" className="navbar-brand p-0">
           <img src="./img/biotecnica-logo-branco-cortado.png" alt="Logo" style={{ height: '50px' }} />
         </Link>

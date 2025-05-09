@@ -1,33 +1,27 @@
-//Máscara para manter o celular no formato correto
+export function aplicarMascaraCelular(valor) {
+    // Remover não-numéricos e limitar a 11 dígitos.
+    const limparValor = valor.replace(/\D/g, "").substring(0, 11);
 
-var celular = document.getElementById("celular");
+    // Criar array de números.
+    const numerosArray = limparValor.split("");
 
-celular.addEventListener("input", function(){
-	//Remover não-numéricos e limitar a 11 dígitos.
-	var limparValor = celular.value.replace(/\D/g, "").substring(0,11);
+    // Criar número formatado.
+    let numeroFormatado = "";
 
-	//Criar array de individuais
-	var numerosArray = limparValor.split("");
+    // Só DDD.
+    if (numerosArray.length > 0) {
+        numeroFormatado += `(${numerosArray.slice(0, 2).join("")})`;
+    }
 
-	//Criar número formatado
+    // Primeira parte do número.
+    if (numerosArray.length > 2) {
+        numeroFormatado += ` ${numerosArray.slice(2, 7).join("")}`;
+    }
 
-	var numeroFormatado = "";
+    // Segunda parte do número.
+    if (numerosArray.length > 7) {
+        numeroFormatado += `-${numerosArray.slice(7, 11).join("")}`;
+    }
 
-	//Só DDD
-	if(numerosArray.length > 0) {
-		numeroFormatado += `(${numerosArray.slice(0,2).join("")})`;
-
-	}
-
-	//Primeira parte do num
-	if(numerosArray.length > 2){
-		numeroFormatado += ` ${numerosArray.slice(2,7).join("")}`;
-	}
-
-	//Segunda parte do num
-	if(numerosArray.length > 7)
-		numeroFormatado += `-${numerosArray.slice(7,11).join("")}`;
-
-	//Enviar número formato para o campo
-	celular.value = numeroFormatado;
-});
+    return numeroFormatado;
+}

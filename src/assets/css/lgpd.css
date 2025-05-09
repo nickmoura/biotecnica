@@ -1,0 +1,56 @@
+.lgpd-hero {
+	position: relative;
+	z-index: 1;
+	border-bottom: 0.125rem solid var(--primary-color);
+}
+
+.lgpd-hero::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.30;
+	z-index: -1;
+	background-image: url('/img/lgpd.jpg');
+	background-size: cover;
+	background-position: 50% 60%;
+}
+
+.lgpd-title {
+	color: var(--primary-color);
+	text-align: center;
+	font-size: 3rem;
+	margin: 0;
+}
+
+.lgpd-subtitle {
+	margin: 0;
+	text-align: justify;
+	color: var(--primary-color);
+	font-weight: bold;
+	font-size: 0.875rem;
+	text-indent: 0.75rem;
+}
+
+@media (min-width: 1300px) {
+	.lgpd-title {
+		font-size: 4rem;
+	}
+
+	.lgpd-subtitle {
+		font-size: 1.5rem;
+	}
+}
+
+.lgpd-text {
+	text-align: justify;
+	text-indent: 1.75rem;
+}
+
+ul {
+	list-style-position: inside; /* Coloca os marcadores dentro do conteúdo */
+	padding-left: 0; /* Remove o padding padrão */
+	margin-left: 20px; /* Controla a posição do texto e marcador */
+  }

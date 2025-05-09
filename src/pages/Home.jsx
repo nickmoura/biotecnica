@@ -313,7 +313,7 @@ const Home = () => {
 										<div className="col-12">
 											<button type="submit"
 												className="submit-contact btn btn-primary w-100 py-3 px-5">Enviar</button>
-											<p className="agree-lgpd fs-10">Ao clicar em &quot;enviar&quot;, você concorda com a política de privacidade disponível em nosso site. <a href="/LGPD">Clique aqui para lê-la</a>.</p>
+											<p className="agree-lgpd fs-10">Ao clicar em &quot;enviar&quot;, você concorda com a política de privacidade disponível em nosso site. <a href="/dados">Clique aqui para lê-la</a>.</p>
 
 										</div>
 									</div>
